@@ -1,0 +1,45 @@
+* {
+    font-family: 'Red Rose', cursive;
+    background: grey;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.images {
+    display: flex;
+    width: 640px;
+    animation-duration: 10s;
+    animation-name: mesImages;
+    animation-iteration-count: infinite;
+    width: calc(500px * 4);
+}
+
+#caroussel {
+    overflow: auto;
+}
+
+@keyframes mesImages {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(256px);
+    }
+    50% {
+        transform: translate(512px);
+    }
+    75% {
+        transform: translate(1024px);
+    }
+}
+
+#formContact {
+    display: flex;
+}
