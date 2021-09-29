@@ -1,0 +1,133 @@
+* {
+    font-family: 'Red Rose', cursive;
+    background: grey;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.images {
+    display: flex;
+    width: 640px;
+    animation-duration: 10s;
+    animation-name: mesImages;
+    animation-iteration-count: infinite;
+    width: calc(500px * 4);
+}
+
+#caroussel {
+    overflow: auto;
+}
+
+@keyframes mesImages {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(256px);
+    }
+    50% {
+        transform: translate(512px);
+    }
+    75% {
+        transform: translate(1024px);
+    }
+}
+
+#formContact {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+/* HEADER */
+
+    /* BASE */
+
+header{
+width: auto;
+height: 20%;
+}
+
+body{
+    flex-grow: 1;
+}
+
+    /* SELECT LANGUAGE */
+    .btnLangage {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    input[type="checkbox"]
+    {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        -webkit-appearance: none;
+        background:url(https://img.icons8.com/color/40/000000/great-britain-circular.png);
+        background-repeat: repeat-y;
+        background-position: top right;
+        outline: none;
+        border-radius: 20px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        transition: .5s;
+
+    }
+
+    input:checked[type="checkbox"] {
+        background:url(https://img.icons8.com/color/40/000000/france-circular.png);
+        background-repeat: repeat-y;
+        background-position: top left;
+    }
+
+    input[type="checkbox"]::before
+    {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        background: #fff;
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        transition: .5s;
+    } 
+
+    input:checked[type="checkbox"]::before
+    {
+        left: 40px;
+    }
+
+
+
+/* Footer */
+
+.footerBox{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgSocial {
+    width: 20px;
+    height: 20px;
+}
+
+.boxLink {
+    display: flex;
+    justify-content: center;
+}
