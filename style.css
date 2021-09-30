@@ -5,6 +5,13 @@ header {
   background-position: bottom;
 }
 
+body{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 .topHeader {
   display: flex;
   justify-content: space-between;
@@ -14,11 +21,11 @@ header {
 }
 
 h1 {
-  color: #666b70;
-  font-family: 'red rose';
-  font-size: 3,5em;
-  letter-spacing: 26px;
-  text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
+color: #666b70;
+font-family: 'Federo', sans-serif;
+font-size: 3,5em;
+letter-spacing: 20px;
+text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
     #000000 1px -1px;
 }
 
@@ -29,9 +36,11 @@ h1:hover {
 h2 {
   color: #868c92;
   text-align: center;
-  font-family: 'red rose';
+  font-family: 'Federo', sans-serif;
   font-size: 2em;
   letter-spacing: 10px;
+  padding-top: 4vh ;
+  padding-bottom: 5vh ;
 }
 h2:hover {
   color: rgb(16, 66, 204);
@@ -95,8 +104,6 @@ input:checked[type='checkbox'] {
     background-size: cover;
     background-position: 45% 75%;
     opacity: 90%;
-    tet
-
 }
 
 .printemps:hover {
@@ -105,7 +112,7 @@ input:checked[type='checkbox'] {
     width: 150%;
 }
 .ete {
-    width: 100%;
+    width: auto;
     height: 40vh;
     background-image: url(img/BodyEte.jpeg);
     background-size: cover;
@@ -134,7 +141,7 @@ input:checked[type='checkbox'] {
 }
 
 .bodyP {
-    font-family: 'red rose';
+    font-family: 'Federo', sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: black;
@@ -149,14 +156,6 @@ input:checked[type='checkbox']::before {
 
 /* Footer */
 
-footer {
-/* position:absolute;
-bottom:0;
-width:100%;
-/* padding-top:50px;
-height:50px; */
-} */
-
 .footerBox {
 display: flex;
 justify-content: space-around;
@@ -164,19 +163,33 @@ flex-direction: column;
 }
 
 .footerTitle {
-    font-family: 'red rose';
-    color: red;
+    font-family: 'Federo', sans-serif;
+    color: #25292e;
+    text-align: center;
 }
 
+.localisation {
+    font-family: 'Federo', sans-serif;
+    text-align: center;
+    color: #9aa5b3;
+}
 .imgSocial {
-width: 20px;
-height: 20px;
-display: flex;
-align-items: center;
-flex-direction: column;
-padding-top: ;
+width: 30px;
+height: 30px;
 }
 
+.boxLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footerBottom {
+    font-family: 'Federo', sans-serif;
+    text-align: center;
+    color: #25292e;
+    font-size: 0.7em;
+}
 /* PARTIE RESPONSIVE */
 
 @media screen and (min-width: 600px) {
@@ -217,5 +230,23 @@ min-height: 200px;
     .footerBox{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        margin-right: 15%;
+        margin-left: 15%;
     }
-  }
+
+    .boxLink {
+        display: flex;
+    }
+
+    .socialNetwork {
+        padding: 8px;
+    }
+
+    .socialNetwork :hover{
+        opacity: 20%;
+    }
+
+
+    }
+
