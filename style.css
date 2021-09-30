@@ -1,45 +1,75 @@
-* {
-    font-family: 'Red Rose', cursive;
-    background: grey;
-}
+
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  
+  background-image: url(img/Skyline.jpg);
+  background-size: cover;
+  background-position: bottom ;
+  
+  
+}
+
+@media screen and (min-width: 600px) {
+  header{
+  
+  background-image: url(img/Skyline.jpg);
+  background-size: cover;
+  background-position: bottom ;
+  min-height: 200px;
+
+  
+  }
+}
+
+html{
+  max-width: 1000px ;
 }
 
 
+@media screen and (min-width: 1000px) {
 
+html {
+  width: 1000px ;
+  display: flex ;
+  justify-content: center;
+  
+}
+
+}
+
+h1 {
+  font-family: 'Red Rose', cursive;
+  color: #b7c4d4;
+}
+/* 
 .images {
-    display: flex;
-    width: 640px;
-    animation-duration: 10s;
-    animation-name: mesImages;
-    animation-iteration-count: infinite;
-    width: calc(500px * 4);
+  display: flex;
+  width: 640px;
+  animation-duration: 10s;
+  animation-name: mesImages;
+  animation-iteration-count: infinite;
+  width: calc(500px * 4);
 }
 
 #caroussel {
-    overflow: auto;
+  overflow: auto;
 }
 
 @keyframes mesImages {
-    0% {
-        transform: translate(0);
-    }
-    25% {
-        transform: translate(256px);
-    }
-    50% {
-        transform: translate(512px);
-    }
-    75% {
-        transform: translate(1024px);
-    }
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(256px);
+  }
+  50% {
+    transform: translate(512px);
+  }
+  75% {
+    transform: translate(1024px);
+  }
 }
 
 #formContact {
-    display: flex;
-}
+  display: flex;
+} */
