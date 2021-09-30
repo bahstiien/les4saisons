@@ -306,15 +306,33 @@ input {
     width: 50%;
     border-radius: 10px;
     box-shadow: 10px 5px 5px #FFBDD6;
+    font-size: 25px;
+    margin-bottom: 30px;
 }
 
-#saisons {
+#selectSaison {
     margin-top: 20px;
-    height: 35px;
+    height: 40px;
     width: 50%;
     border-radius: 10px;
     
 }
+
+#message {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#OK {
+    width: 25%;
+    height: 35px;
+}
+
+#OK:hover {
+    background:  #FFBDD6;
+    box-shadow:10px 5px 5px #000000;
+}
+
 
         
     
