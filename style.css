@@ -76,15 +76,16 @@ input:checked[type='checkbox'] {
 .hiver {
     width: 100%;
     height: 40vh;
-    background-image: url(img/winter.jpeg);
+    background-image: url(img/winter.png);
     background-size: cover;
-    background-position: 45% 75%;
-    opacity: 30%;
+    background-position: 25% 75%;
+    opacity: 90%;
 }
 
 .hiver:hover {
 
-    opacity: 70%;
+    opacity: 30%;
+    width: 150%;
 }
 
 .printemps {    
@@ -93,13 +94,15 @@ input:checked[type='checkbox'] {
     background-image: url(img/spring.jpeg);
     background-size: cover;
     background-position: 45% 75%;
-    opacity: 30%;
+    opacity: 90%;
+    tet
 
 }
 
 .printemps:hover {
 
-    opacity: 70%;
+    opacity: 30%;
+    width: 150%;
 }
 .ete {
     width: 100%;
@@ -107,26 +110,37 @@ input:checked[type='checkbox'] {
     background-image: url(img/BodyEte.jpeg);
     background-size: cover;
     background-position: 45% 75%;
-    opacity: 30%;
+    opacity: 90%;
 }
 
 .ete:hover {
 
-    opacity: 70%;
+    opacity: 30%;
+    width: 150%;
 }
+
 .automne {
     width: 100%;
     height: 40vh;
     background-image: url(img/fall.jpeg);
     background-size: cover;
     background-position: 45% 75%;
-    opacity: 30%;
-
 }
 
 .automne:hover {
 
-    opacity: 70%;
+    opacity: 30%;
+    width: 150%;
+}
+
+.bodyP {
+    font-family: 'red rose';
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    padding-top: 50%;
+    font-size: 3vh;
+
 }
 
 input:checked[type='checkbox']::before {
@@ -144,27 +158,33 @@ height:50px; */
 } */
 
 .footerBox {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+}
+
+.footerTitle {
+    font-family: 'red rose';
+    color: red;
 }
 
 .imgSocial {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+width: 20px;
+height: 20px;
+display: flex;
+align-items: center;
+flex-direction: column;
+padding-top: ;
 }
 
 /* PARTIE RESPONSIVE */
 
 @media screen and (min-width: 600px) {
     header {
-      background-image: url(img/Skyline.jpg);
-      background-size: cover;
-      background-position: bottom;
-      min-height: 200px;
+background-image: url(img/Skyline.jpg);
+background-size: cover;
+background-position: bottom;
+min-height: 200px;
     }
 
     .boxBody {
