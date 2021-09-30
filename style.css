@@ -1,4 +1,4 @@
-{
+*{
     font-family: 'Red Rose', cursive;
     background: grey;
 }
@@ -41,6 +41,8 @@ header {
 #formContact {
     display: flex;
 }
+
+
 @media screen and (max-width: 600px){ 
 
 
@@ -70,7 +72,8 @@ header {
             border: solid 1px;
             
         }
-        h1 {
+
+        .tittleEvent {
             display :flex;
         justify-content: center;
         color : black;
@@ -124,7 +127,7 @@ header {
            border: solid 1px;
            
        }
-       h1 {
+       .tittleEvent {
            display :flex;
        justify-content: center;
        color :black;
