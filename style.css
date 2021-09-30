@@ -71,7 +71,8 @@ body{
         transform: translate(-50%, -50%);
     }
 
-    input[type="checkbox"]
+    /* BTN ENG */
+    input[type="checkbox"] 
     {
         position: relative;
         width: 80px;
@@ -82,29 +83,34 @@ body{
         background-position: top right;
         outline: none;
         border-radius: 20px;
-        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
         transition: .5s;
+        border: 1px solid #9AA5B3;
+
 
     }
-
+/* BTN FRAN */
     input:checked[type="checkbox"] {
         background:url(https://img.icons8.com/color/40/000000/france-circular.png);
         background-repeat: repeat-y;
         background-position: top left;
+        background-color: #ffffff;
     }
 
     input[type="checkbox"]::before
     {
         content: '';
         position: absolute;
-        width: 40px;
-        height: 40px;
+        width: 38px;
+        height: 38px;
         border-radius: 20px;
         top: 0;
         left: 0;
-        background: #fff;
+        background: #B7C4D4;
         transform: scale(1.1);
         box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        border: 1px solid #9AA5B3;
         transition: .5s;
     } 
 
@@ -116,6 +122,15 @@ body{
 
 
 /* Footer */
+
+footer {
+background:#ccc;
+position:absolute;
+bottom:0;
+width:100%;
+padding-top:50px;
+height:50px;
+}
 
 .footerBox{
     display: flex;
