@@ -5,6 +5,13 @@ header {
   background-position: bottom;
 }
 
+body{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 .topHeader {
   display: flex;
   justify-content: space-between;
@@ -16,8 +23,8 @@ header {
 h1 {
   color: #666b70;
   font-family: 'red rose';
-  font-size: 3,5em;
-  letter-spacing: 26px;
+  font-size: 2,5em;
+  letter-spacing: 2px;
   text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
     #000000 1px -1px;
 }
@@ -30,8 +37,10 @@ h2 {
   color: #868c92;
   text-align: center;
   font-family: 'red rose';
-  font-size: 2em;
+  font-size: 1,5em;
   letter-spacing: 10px;
+  padding-top: 4vh ;
+  padding-bottom: 5vh ;
 }
 h2:hover {
   color: rgb(16, 66, 204);
@@ -174,7 +183,7 @@ height: 20px;
 display: flex;
 align-items: center;
 flex-direction: column;
-padding-top: ;
+
 }
 
 /* PARTIE RESPONSIVE */
