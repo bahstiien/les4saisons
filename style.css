@@ -9,7 +9,6 @@ body{
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 .topHeader {
@@ -75,11 +74,16 @@ input:checked[type='checkbox'] {
   background-color: #ffffff;
 }
 
+input:checked[type='checkbox']::before {
+    left: 40px;
+  }
+
 /* BOX PHOTO HOME */
 
 .boxBody {
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
 }
 
 .hiver {
@@ -94,7 +98,11 @@ input:checked[type='checkbox'] {
 .hiver:hover {
 
     opacity: 30%;
-    width: 150%;
+    width: 180%;
+}
+
+.hiver:hover .bodyP{
+    visibility: visible;
 }
 
 .printemps {    
@@ -109,10 +117,15 @@ input:checked[type='checkbox'] {
 .printemps:hover {
 
     opacity: 30%;
-    width: 150%;
+    width: 180%;
 }
+
+.printemps:hover .bodyP{
+    visibility: visible;
+}
+
 .ete {
-    width: auto;
+    width: 100%;
     height: 40vh;
     background-image: url(img/BodyEte.jpeg);
     background-size: cover;
@@ -123,8 +136,13 @@ input:checked[type='checkbox'] {
 .ete:hover {
 
     opacity: 30%;
-    width: 150%;
+    width: 180%;
 }
+
+.ete:hover .bodyP{
+    visibility: visible;
+}
+
 
 .automne {
     width: 100%;
@@ -136,23 +154,25 @@ input:checked[type='checkbox'] {
 
 .automne:hover {
 
-    opacity: 30%;
-    width: 150%;
+    background-color: RGBA(0,0,0,0.25);
+    width: 180%;
+    visibility: visible;
+}
+.automne:hover .bodyP{
+    visibility: visible;
 }
 
 .bodyP {
     font-family: 'Federo', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    color: black;
+    color:rgba(0, 0, 0, 5);
     padding-top: 50%;
-    font-size: 3vh;
-
+    font-size: 5vh;
+    visibility: hidden;
 }
 
-input:checked[type='checkbox']::before {
-  left: 40px;
-}
+
 
 /* Footer */
 
@@ -160,6 +180,7 @@ input:checked[type='checkbox']::before {
 display: flex;
 justify-content: space-around;
 flex-direction: column;
+margin-top: 5% ;
 }
 
 .footerTitle {
@@ -190,6 +211,38 @@ height: 30px;
     color: #25292e;
     font-size: 0.7em;
 }
+
+/* BTN */
+.btnBox {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btnBox a {
+    font-family: 'Federo', sans-serif;
+    text-align: center;
+    color: #25292e;
+    text-decoration: none ;
+    font-size: 2em ;
+}
+
+.btnBox a:hover{
+    color: goldenrod ;
+}
+
+.btnFromHome{
+
+   margin-top: 5% ;
+    border-radius: 30px;
+    width: 60%;
+    height: 10vh;
+    background-color: #9aa5b3;
+}
+
+a :visited{
+    color: hotpink;
+}
 /* PARTIE RESPONSIVE */
 
 @media screen and (min-width: 600px) {
@@ -206,22 +259,18 @@ min-height: 200px;
     }
 
     .automne {
-        transform: skew(-15deg);
         height: 70vh;
     }
 
     .ete {
         height: 70vh;
-        transform: skew(-15deg);
         }
 
     .printemps {
         height: 70vh;
-        transform: skew(-15deg);
         }
 
     .hiver {
-        transform: skew(-15deg);
         height: 70vh;
         }
 
@@ -258,9 +307,9 @@ min-height: 200px;
         animation-name: mesImages;
         animation-iteration-count: infinite;
         width: calc(500px * 5);
-       
-    }
-    #caroussel {
+       }
+    
+       #caroussel {
         /* overflow: auto; */
         display: flex;
         justify-content: center;
@@ -288,7 +337,6 @@ min-height: 200px;
 #formContact {
     display: flex;
     flex-direction: column;
-    
 }
 
 label {
@@ -298,7 +346,6 @@ label {
     margin-bottom: 20px;
     margin-top: 20px;
     font-size: 30px;
-    
 }
 
 input {
@@ -315,7 +362,6 @@ input {
     height: 40px;
     width: 50%;
     border-radius: 10px;
-    
 }
 
 #message {
