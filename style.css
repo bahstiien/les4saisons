@@ -79,6 +79,7 @@ input:checked[type='checkbox'] {
 .boxBody {
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
 }
 
 .hiver {
@@ -93,7 +94,11 @@ input:checked[type='checkbox'] {
 .hiver:hover {
 
     opacity: 30%;
-    width: 150%;
+    width: 180%;
+}
+
+.hiver:hover .bodyP{
+    visibility: visible;
 }
 
 .printemps {    
@@ -108,8 +113,13 @@ input:checked[type='checkbox'] {
 .printemps:hover {
 
     opacity: 30%;
-    width: 150%;
+    width: 180%;
 }
+
+.printemps:hover .bodyP{
+    visibility: visible;
+}
+
 .ete {
     width: 100%;
     height: 40vh;
@@ -122,8 +132,13 @@ input:checked[type='checkbox'] {
 .ete:hover {
 
     opacity: 30%;
-    width: 150%;
+    width: 180%;
 }
+
+.ete:hover .bodyP{
+    visibility: visible;
+}
+
 
 .automne {
     width: 100%;
@@ -135,18 +150,22 @@ input:checked[type='checkbox'] {
 
 .automne:hover {
 
-    opacity: 30%;
-    width: 150%;
+    background-color: RGBA(0,0,0,0.25);
+    width: 180%;
+    visibility: visible;
+}
+.automne:hover .bodyP{
+    visibility: visible;
 }
 
 .bodyP {
     font-family: 'Federo', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    color: black;
+    color:rgba(0, 0, 0, 5);
     padding-top: 50%;
-    font-size: 3vh;
-
+    font-size: 5vh;
+    visibility: hidden;
 }
 
 input:checked[type='checkbox']::before {
@@ -225,22 +244,18 @@ min-height: 200px;
     }
 
     .automne {
-        transform: skew(-15deg);
         height: 70vh;
     }
 
     .ete {
         height: 70vh;
-        transform: skew(-15deg);
         }
 
     .printemps {
         height: 70vh;
-        transform: skew(-15deg);
         }
 
     .hiver {
-        transform: skew(-15deg);
         height: 70vh;
         }
 
