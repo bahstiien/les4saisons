@@ -1,4 +1,4 @@
-/* {
+{
     font-family: 'Red Rose', cursive;
     background: grey;
 }
@@ -41,8 +41,6 @@ header {
 #formContact {
     display: flex;
 }
-*/
-
 @media screen and (max-width: 600px){ 
 
 
