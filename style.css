@@ -174,14 +174,6 @@ margin-top: 5% ;
     color: #9aa5b3;
 }
 .imgSocial {
-<<<<<<< HEAD
-width: 20px;
-height: 20px;
-display: flex;
-align-items: center;
-flex-direction: column;
-
-=======
 width: 30px;
 height: 30px;
 }
@@ -190,7 +182,6 @@ height: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
->>>>>>> ddbfd6e7fbb5746220416a9d573c6f32bcffae50
 }
 
 .footerBottom {
@@ -198,6 +189,25 @@ height: 30px;
     text-align: center;
     color: #25292e;
     font-size: 0.7em;
+}
+
+/* BTN */
+.btnBox {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btnFromHome{
+
+    border-radius: 30px;
+    width: 35%;
+    height: 10vh;
+    text-decoration:none;
+}
+
+a :visited{
+    color: hotpink;
 }
 /* PARTIE RESPONSIVE */
 
@@ -258,4 +268,3 @@ min-height: 200px;
 
 
     }
-}
