@@ -96,96 +96,45 @@ input:checked[type='checkbox']::before {
     max-width: 1000px;
 }
 
-.hiver {
+.season {
+    width: 25%;
+    position: relative;
+    display: flex;
+}
+
+.season:hover{
+    width: 120%;
+}
+
+.seasonIMG {
     width: 100%;
-    height: 40vh;
-    background-image: url(img/winter.png);
-    background-size: cover;
-    background-position: 25% 75%;
+    height: 70vh;
     opacity: 90%;
+    object-fit: cover;
 }
 
-.hiver:hover {
-    opacity: 30%;
-    width: 180%;
-}
-
-.hiver:hover .bodyP{
+.season:hover .seasonIMG{
+    opacity:50%;
+    transition: 0.5s;
     visibility: visible;
 }
 
-.printemps {    
-    width: 100%;
-    height: 40vh;
-    background-image: url(img/spring.jpeg);
-    background-size: cover;
-    background-position: 45% 75%;
-    opacity: 90%;
-}
-
-.printemps:hover {
-
-    opacity: 30%;
-    width: 180%;
-}
-
-.printemps:hover .bodyP{
+.season:hover .seasonTxt{
     visibility: visible;
-}
-
-.ete {
-    width: 100%;
-    height: 40vh;
-    background-image: url(img/BodyEte.jpeg);
-    background-size: cover;
-    background-position: 45% 75%;
-    opacity: 90%;
-}
-
-.ete:hover {
-
-    opacity: 30%;
-    width: 180%;
-}
-
-.ete:hover .bodyP{
-    visibility: visible;
+    opacity: 3;
 }
 
 
-.automne {
-    width: 100%;
-    height: 40vh;
-    background-image: url(img/fall.jpeg);
-    background-size: cover;
-    background-position: 45% 75%;
-}
-
-.automne:hover {
-
-    opacity:30%;
-    width: 180%;
-    visibility: visible;
-}
-.automne:hover .bodyP{
-    visibility: visible;
-    z-index: 1;
-}
-
-.bodyP {
+.seasonTxt {
     font-family: 'Federo', sans-serif;
     text-transform: uppercase;
+    color: rgba(0, 0, 0, 12);
+    font-size: 7vh;
     text-align: center;
-    color: black;
-    padding-top: 50%;
-    font-size: 5vh;
+    margin-top: 50%;
+    margin-left: -70%;
     visibility: hidden;
 }
-
-.textsaison{
-    color: black;
-}
-
 
 /* Footer */
 
@@ -245,7 +194,6 @@ height: 30px;
 }
 
 .btnFromHome{
-
    margin-top: 5% ;
     border-radius: 30px;
     width: 60%;
@@ -271,23 +219,9 @@ min-height: 200px;
         flex-direction: row;
     }
 
-    .automne {
+    .seasonIMG {
         height: 70vh;
     }
-
-    .ete {
-        height: 70vh;
-        }
-
-    .printemps {
-        height: 70vh;
-        }
-
-    .hiver {
-        height: 70vh;
-        }
-
-
     
     .footerBox{
         display: flex;
