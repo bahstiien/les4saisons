@@ -180,9 +180,10 @@ input:checked[type='checkbox']::before {
     padding-top: 50%;
     font-size: 5vh;
     visibility: hidden;
+    opacity: 1.2;
 }
 
-.textsaison{
+.textSaison {
     color: black;
 }
 
@@ -314,12 +315,12 @@ min-height: 200px;
 /* CSS du formulaire  */
     .images {
         display: flex;
-        width: 300px;
-        height: 200px;
+        width: 900px;
+        height: 120px;
         animation-duration: 10s;
         animation-name: mesImages;
         animation-iteration-count: infinite;
-        width: calc(500px * 5);
+        
        }
     
        #caroussel {
@@ -329,13 +330,14 @@ min-height: 200px;
         align-items: center; 
         margin-right: 10%;
         margin-left: 10%;
+        width: calc(120px*6);
     }
     
     @keyframes mesImages {
         0% {
-            transform: translate(0);
+            transform: translate(0px);
         }
-        25% {
+        10% {
             transform: translate(50px);
         }
         50% {
