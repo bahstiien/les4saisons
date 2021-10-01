@@ -96,7 +96,6 @@ input:checked[type='checkbox']::before {
 }
 
 .hiver:hover {
-
     opacity: 30%;
     width: 180%;
 }
