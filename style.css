@@ -326,20 +326,22 @@ min-height: 200px;
             transform: translate(0);
         }
         25% {
-            transform: translate(100px);
+            transform: translate(50px);
         }
         50% {
-            transform: translate(200px);
+            transform: translate(100px);
         }
         75% {
-            transform: translate(100px);
+            transform: translate(50px);
         }
     }
         
 
 #formContact {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 label {
@@ -347,29 +349,40 @@ label {
     width: 50%;
     border-radius: 10px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 30px;
 }
 
 input {
     height: 25px;
-    width: 50%;
+    width: 25%;
     border-radius: 10px;
     box-shadow: 10px 5px 5px #FFBDD6;
     font-size: 25px;
     margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 #selectSaison {
     margin-top: 20px;
     height: 40px;
-    width: 50%;
+    width: 30%;
     border-radius: 10px;
+    margin-left: 35%;
+    text-align: center;
+    box-shadow: 10px 5px 5px #FFBDD6;
+    border: 2px solid black;
+    font-size: 15px;
 }
+    
 
 #message {
     height: 100px;
     margin-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #FFBDD6; 
+    border: 2px solid black;
 }
 
 #OK {
@@ -380,6 +393,11 @@ input {
 #OK:hover {
     background:  #FFBDD6;
     box-shadow:10px 5px 5px #000000;
+}
+
+.labelMess {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 

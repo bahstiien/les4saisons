@@ -17,14 +17,13 @@
 <body>
 <header>
     <div class="topHeader">
-        <h1>Le Lyon des saisons</h1>
-        <h2>Formulaire de contact</h2>
-        <div id="btnLangage">
+        <h1><a href="index.html">Le Lyon des saisons</a></h1>
+       <div id="btnLangage">
             <input type="checkbox" name=" btn ">
         </div>
     </div>
 </header>
-
+<h2>Formulaire de contact</h2>
 <div id="caroussel">
     <div class="images">
         <img src="img/image2.jpg" alt="">
@@ -35,28 +34,44 @@
         <img src="img/image1.jpg" alt="">
     </div>
     </div> 
-   
-<section id="formContact">
-    <form id="formContact">
-        <label for="name">Nom</label>
-        <input type="text" id="name" placeholder="Votre Nom">
-
-        <label for="prenom">Prénom</label>
-        <input type="text" id="prenom" placeholder="Votre Prénom">
-
-        <label for="email">Votre Email</label>
-        <input type="text" id="email" placeholder="Votre Email">
-        
+    <div class="selectSaison">
         <select name="saison" id="selectSaison">
-            <option value="">--Please choose an option--</option>
+            <option value="">Choisir une saison</option>
             <option value="spring">Printemps</option>
             <option value="summer">Eté</option>
             <option value="fall">Automne</option>
             <option value="winter">Hiver</option>
         </select>
-            
-        <label for="message">Votre Message</label>
-        <textarea id="message" placeholder="Votre message"></textarea>
+    </div>
+    
+    <section id="Contact">
+    <form id="formContact">
+        <label for="name">Nom :</label>
+        <input type="text" id="name">
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom">
+
+        <label for="email">Votre Email :</label>
+        <input type="text" id="email">
+       
+        <label for="titre">Titre de votre contribution :</label>
+        <input type="text" id="titre">
+
+        <label for="soustitre">Sous-titre de votre contribution :</label>
+        <input type="text" id="soustitre"> 
+
+        <label for="date">Date de l'évènement:</label>
+
+        <input type="date" id="start" name="trip-start"
+        value="2021-10-01"
+        min="2021-01-01" max="2030-12-31">
+
+        <label for="lieu">Lieu de l'évènement :</label>
+        <input type="text" id="lieu">
+
+        <label for="message" class="labelMess">Votre message :</label>
+        <textarea id="message"></textarea>
 
         <input type="submit" id="OK">
     </form>
