@@ -8,36 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&display=swap" rel="stylesheet">
-<link href="./style.css"rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
 
 
 <body>
-
-    <header> 
-        <h1>Le Lyon des saisons</h1>
-        <h2>Tous les évènements de la ville lumière</h2>
-        <div id="btnLangage"> </div>
-    
-        <div id="caroussel">
-            <div class="images">
-                <img src="image2.jpg" alt="">
-                <img src="image2.jpg" alt="">
-                <img src="image2.jpg" alt="">
-                <img src="image2.jpg" alt="">
-                <img src="image2.jpg" alt="">
-                <img src="image2.jpg" alt="">
+    <header>
+        <div class="topHeader">
+            <h1>Le Lyon des saisons</h1>
+            <div id="btnLangage">
+                <input type="checkbox" name=" btn ">
             </div>
-            </div> 
-    
-    
+        </div>
     </header>
     
 <!--bloc la page-->
     <div class = page>
         <div class = caroussel>
-            <h2 class = tittleEvent> Title </h2>
+            <h2> Title </h2>
             <div class = description>
                 
 
@@ -71,6 +60,35 @@
             </div>
         </div>
     </div>
+    
+    <footer>
+        <div class="footerBox">
+            <div class="socialBox">
+                <h3 class="footerTitle"> Retrouvez nous sur nos réseaux</h3>
+                <div class="boxLink">
+                    <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" class="imgSocial"/></a>
+                    <a class="socialNetwork" href="#"><img src="https://img.icons8.com/glyph-neue/64/000000/instagram-new.png" class="imgSocial"/></a>
+                    <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/pinterest--v1.png" class="imgSocial"/></a>
+                    <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin--v1.png" class="imgSocial"/></a>
+                    <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/github--v1.png" class="imgSocial"/></a>
+
+                </div>
+            </div>
+
+            <div class="infoBox">
+                <h3 class="footerTitle"> Venez nous rendre visite</h3>
+                <p class="localisation"> Wild Code School</p>
+                <p class="localisation">17 Rue Delandine, 69002 Lyon</p>
+            </div>
+        </div>
+        <p class="footerBottom">
+            Florence - Solène - Arthaud - Bastien - Nicolas
+        </p>
+    </footer>
+    
+    
     <script src="./saison.js"></script>
+
+
 </body>
 </html>
