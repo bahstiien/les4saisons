@@ -28,6 +28,16 @@ text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
     #000000 1px -1px;
 }
 
+h1 a{
+    text-decoration: none;
+    color: #666b70;
+font-family: 'Federo', sans-serif;
+font-size: 3,5em;
+letter-spacing: 20px;
+text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
+    #000000 1px -1px;
+}
+
 h1:hover {
   color: black;
 }
