@@ -154,24 +154,28 @@ input:checked[type='checkbox']::before {
 
 .automne:hover {
 
-    background-color: RGBA(0,0,0,0.25);
+    opacity:30%;
     width: 180%;
     visibility: visible;
 }
 .automne:hover .bodyP{
     visibility: visible;
+    z-index: 1;
 }
 
 .bodyP {
     font-family: 'Federo', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    color:rgba(0, 0, 0, 5);
+    color: black;
     padding-top: 50%;
     font-size: 5vh;
     visibility: hidden;
 }
 
+.textsaison{
+    color: black;
+}
 
 
 /* Footer */
