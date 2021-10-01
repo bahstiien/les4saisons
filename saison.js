@@ -24,6 +24,8 @@ image.style.width= '500px';
 createEvent(biennale.tittleEvent, biennale.image, biennale.textEvent)
 
 
+
+
     /*const tittleEvent = document.createElement("tittle");
   
  tttleEvent.appendChild(tittle);
