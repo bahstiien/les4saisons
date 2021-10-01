@@ -52,7 +52,8 @@ h2 {
   padding-bottom: 5vh ;
 }
 h2:hover {
-  color: rgb(16, 66, 204);
+  color: rgb(97, 98, 100);
+  transition: 0.5s;
 }
 
 /* SELECT LANGUAGE */
@@ -97,7 +98,9 @@ input:checked[type='checkbox']::before {
 }
 
 .season {
-    width: 25%;
+    width: 100%;
+    max-height: 500px;
+    min-height: 100px;
     position: relative;
     display: flex;
 }
@@ -172,6 +175,7 @@ height: 30px;
     text-align: center;
     color: #25292e;
     font-size: 0.7em;
+    padding: 3%;
 }
 
 /* BTN */
@@ -179,6 +183,7 @@ height: 30px;
     padding: 30px;
     display: flex;
     justify-content: center;
+
 }
 
 .btnBox a {
@@ -190,20 +195,32 @@ height: 30px;
 }
 
 .btnBox a:hover{
-    color: goldenrod ;
-}
+    color: rgb(26, 24, 24) ;}
 
 .btnFromHome{
-   margin-top: 5% ;
-    border-radius: 30px;
+    margin-top: 5% ;
+    border-radius: 25px;
+    border-color: grey;
+    border: 0.1rem solid rgb(141, 137, 137);
     width: 60%;
-    height: 10vh;
-    background-color: #9aa5b3;
+    height: 5rem;
+    background-color: #d5dbe2;
+    box-shadow: 10px 5px 100px rgb(146, 141, 141);
 }
 
-a :visited{
-    color: hotpink;
+.btnFromHome:hover {
+    background-color: rgba(139, 130, 130, 0.658);
+    color: black;
 }
+
+.line{
+    border-bottom:  rgba(139, 130, 130, 0.658) 1px solid;
+    padding-top: 7%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* PARTIE RESPONSIVE */
 
 @media screen and (min-width: 600px) {
@@ -219,6 +236,10 @@ min-height: 200px;
         flex-direction: row;
     }
 
+    .season {
+        width: 25%;
+
+    }
     .seasonIMG {
         height: 70vh;
     }
@@ -325,8 +346,3 @@ input {
     background:  #FFBDD6;
     box-shadow:10px 5px 5px #000000;
 }
-
-
-        
-    
-
