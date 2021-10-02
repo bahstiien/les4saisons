@@ -5,6 +5,7 @@ header {
   background-position: bottom;
 }
 
+
 body{
   max-width: 1000px;
   margin-left: auto;
@@ -381,6 +382,8 @@ min-height: 200px;
             border: solid 1px;
             
         }
+
+
 
         .tittleEvent {
             display :flex;

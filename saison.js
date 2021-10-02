@@ -1,51 +1,57 @@
-/*const imageEvent=document.querySelector ('.img1')
-const image =document.createElement('img')
-image.src = '../images/index.jpeg';
+const events = [
 
-imageEvent.appendChild(image);
-image.style.width= '500px';*/
+  {tittle : 'Biennale de la danse', image1 : './images/index.jpeg' ,image2: './images/images.jpeg' ,textEvent :'tototot'
 
+  },
+  {tittle : 'Festival', image1 : './images/index.jpeg' ,image2: './images/images.jpeg' ,textEvent :'tititi'
 
-/*const imageEvent2 = document.querySelector ('.img2');
-const image2 = document.createElement ('img');
-image2.src = 'images/images.jpeg ';
+  }
+]
 
-imageEvent2.appendChild (image2);*/
-
-
-const biennale = {tittle : 'biennale de la Danse', image1 : './images/index.jpeg' ,image2: './images/images.jpeg' ,textEvent :'tototot'}
 function createEvent ( tittle, imageUrl,imageUrl2, textEvent) {
-  const imageEvent=document.querySelector ('.img1');
-  const image1 =document.createElement('img');
+  const image1=document.querySelector ('.image1');
   image1.src = imageUrl;
   image1.style.width='100%';
-  image1.style.height = 'auto';
-  imageEvent.appendChild(image1);
-  
-  const imageEvent2=document.querySelector ('.img2');
-  const image2 =document.createElement('img');
-  image2.src = imageUrl2;
-  image2.style.width='100%';
-  image2.style.height = 'auto';;
-  imageEvent2.appendChild(image2); 
+  image1.style.height='auto';
+
   
   
-  /*const tittleEvent = document.createElement(".tittle");
-  const tittle = document.createElement("h2");
-  tittle.style.color='red';
-    
- tittleEvent.appendChild(tittle);*/
+  const imageEvent2=document.querySelector ('.image2');
+
+  imageEvent2.src = imageUrl2;
+  imageEvent2.style.width='100%';
+  imageEvent2.style.height = 'auto';
+ 
+
+const textDiv=document.querySelector ('.presentation');
+
+ textDiv.innerHTML = textEvent; 
   
-    
+  
+  
+
+ const tittleH2 = document.querySelector(".tittle");
+
+tittleH2.innerHTML = tittle;
+
   
 
 }
-createEvent(biennale.tittle, biennale.image1, biennale.image2, biennale.textEvent)
 
 
-  
 
+const btnBiennale = document.querySelector ('#first')
+btnBiennale.addEventListener ('click', ()=>{
+  const biennale = events [0]
+  createEvent(biennale.tittle, biennale.image1, biennale.image2, biennale.textEvent)
 
+})
+const btnFestival = document.querySelector ('#second')
+btnFestival.addEventListener ('click', ()=>{
+  const festival = events [1]
+  createEvent(festival.tittle, festival.image1, festival.image2, festival.textEvent)
+
+})
 
   
 
