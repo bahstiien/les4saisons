@@ -287,8 +287,6 @@ min-height: 200px;
     .hiver {
         height: 70vh;
         }
-
-
     
     .footerBox{
         display: flex;
@@ -309,13 +307,81 @@ min-height: 200px;
     .socialNetwork :hover{
         opacity: 20%;
     }
+}
+/* CSS Formulaire Responsive */ 
 
-
+@media screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        height: auto;
     }
-/* CSS du formulaire  */
     .images {
         display: flex;
-        width: 900px;
+        flex-direction: column;
+        width: 100%;
+        height: 30%;
+    }
+    .selectSaison {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-bottom: 20px;
+        display: flex;
+        border-radius: 5px;
+        
+    }
+
+    #selectSaison {
+        border-radius: 5px;
+        height: auto;
+        box-shadow: 10px 5px 5px #9b9396;
+
+    }
+
+    #formContact {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: auto;
+        margin-left: 10%
+    }
+
+    label {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        border-radius: 5px;
+        box-shadow: 10px 5px 5px #9b9396;
+    }
+
+    #message {
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 10px 5px 5px #9b9396;
+    }
+
+    #OK:hover {
+        background: #FFBDD6;
+        cursor: pointer;
+        
+    }
+
+    #erreur {
+        font-size: 10px;
+        margin-left: 10%;
+        
+    }
+}
+@media screen and (min-width: 600px) {
+   header {
+       width: 100%;
+       height: auto;
+   }
+    .images {
+        display: flex;
+        max-width: 800px;
         height: 120px;
         animation-duration: 10s;
         animation-name: mesImages;
@@ -324,24 +390,23 @@ min-height: 200px;
        }
     
        #caroussel {
-        /* overflow: auto; */
         display: flex;
         justify-content: center;
         align-items: center; 
         margin-right: 10%;
         margin-left: 10%;
-        width: calc(120px*6);
+        width: calc(100px*6);
     }
     
     @keyframes mesImages {
         0% {
             transform: translate(0px);
         }
-        10% {
+        25% {
             transform: translate(50px);
         }
         50% {
-            transform: translate(100px);
+            transform: translate(90px);
         }
         75% {
             transform: translate(50px);
@@ -349,40 +414,40 @@ min-height: 200px;
     }
         
 
-#formContact {
+    #formContact {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-}
+    }
 
-label {
+    label {
     height: 30px;
     width: 50%;
     border-radius: 10px;
     margin-bottom: 20px;
     margin-top: 40px;
     font-size: 30px;
-}
+    }
 
-input {
+    input {
     height: 25px;
     width: 25%;
     border-radius: 10px;
-    box-shadow: 10px 5px 5px #FFBDD6;
+    box-shadow: 10px 5px 5px #9b9396;
     font-size: 25px;
     margin-bottom: 30px;
     margin-top: 40px;
-}
+    }
 
-#selectSaison {
+    #selectSaison {
     margin-top: 20px;
     height: 40px;
     width: 30%;
     border-radius: 10px;
     margin-left: 35%;
     text-align: center;
-    box-shadow: 10px 5px 5px #FFBDD6;
+    box-shadow: 10px 5px 5px #9b9396;
     border: 2px solid black;
     font-size: 15px;
 }
@@ -393,26 +458,27 @@ input {
     margin-bottom: 20px;
     width: 100%;
     border-radius: 10px;
-    box-shadow: 10px 5px 5px #FFBDD6; 
     border: 2px solid black;
-}
+    box-shadow: 10px 5px 5px #9b9396;
+    }
 
-#OK {
+    #OK {
     width: 25%;
     height: 35px;
-}
+    }
 
-#OK:hover {
-    background:  #FFBDD6;
+    #OK:hover {
     box-shadow:10px 5px 5px #000000;
-}
+    cursor: pointer;
+    }
 
-.labelMess {
+    .labelMess {
     text-align: center;
     margin-bottom: 40px;
-}
-
-
-        
-    
+    }
+    #erreur {
+    font-size: 30px;
+    text-align: center;
+    }
+    } 
 
