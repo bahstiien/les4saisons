@@ -52,7 +52,8 @@ h2 {
   padding-bottom: 5vh ;
 }
 h2:hover {
-  color: rgb(16, 66, 204);
+  color: rgb(97, 98, 100);
+  transition: 0.5s;
 }
 
 /* SELECT LANGUAGE */
@@ -96,89 +97,45 @@ input:checked[type='checkbox']::before {
     max-width: 1000px;
 }
 
-.hiver {
+.season {
     width: 100%;
-    height: 40vh;
-    background-image: url(img/winter.png);
-    background-size: cover;
-    background-position: 25% 75%;
+    max-height: 500px;
+    min-height: 100px;
+    position: relative;
+    display: flex;
+}
+
+.season:hover{
+    width: 120%;
+}
+
+.seasonIMG {
+    width: 100%;
+    height: 70vh;
     opacity: 90%;
+    object-fit: cover;
 }
 
-.hiver:hover {
-    opacity: 30%;
-    width: 180%;
-}
-
-.hiver:hover .bodyP{
+.season:hover .seasonIMG{
+    opacity:50%;
+    transition: 0.5s;
     visibility: visible;
 }
 
-.printemps {    
-    width: 100%;
-    height: 40vh;
-    background-image: url(img/spring.jpeg);
-    background-size: cover;
-    background-position: 45% 75%;
-    opacity: 90%;
-}
-
-.printemps:hover {
-
-    opacity: 30%;
-    width: 180%;
-}
-
-.printemps:hover .bodyP{
+.season:hover .seasonTxt{
     visibility: visible;
-}
-
-.ete {
-    width: 100%;
-    height: 40vh;
-    background-image: url(img/BodyEte.jpeg);
-    background-size: cover;
-    background-position: 45% 75%;
-    opacity: 90%;
-}
-
-.ete:hover {
-
-    opacity: 30%;
-    width: 180%;
-}
-
-.ete:hover .bodyP{
-    visibility: visible;
+    opacity: 3;
 }
 
 
-.automne {
-    width: 100%;
-    height: 40vh;
-    background-image: url(img/fall.jpeg);
-    background-size: cover;
-    background-position: 45% 75%;
-}
-
-.automne:hover {
-
-    opacity:30%;
-    width: 180%;
-    visibility: visible;
-}
-.automne:hover .bodyP{
-    visibility: visible;
-    z-index: 1;
-}
-
-.bodyP {
+.seasonTxt {
     font-family: 'Federo', sans-serif;
     text-transform: uppercase;
+    color: rgba(0, 0, 0, 12);
+    font-size: 7vh;
     text-align: center;
-    color: black;
-    padding-top: 50%;
-    font-size: 5vh;
+    margin-top: 50%;
+    margin-left: -70%;
     visibility: hidden;
     opacity: 1.2;
 }
@@ -224,6 +181,7 @@ height: 30px;
     text-align: center;
     color: #25292e;
     font-size: 0.7em;
+    padding: 3%;
 }
 
 /* BTN */
@@ -231,6 +189,7 @@ height: 30px;
     padding: 30px;
     display: flex;
     justify-content: center;
+
 }
 
 .btnBox a {
@@ -242,21 +201,32 @@ height: 30px;
 }
 
 .btnBox a:hover{
-    color: goldenrod ;
-}
+    color: rgb(26, 24, 24) ;}
 
 .btnFromHome{
-
-   margin-top: 5% ;
-    border-radius: 30px;
+    margin-top: 5% ;
+    border-radius: 25px;
+    border-color: grey;
+    border: 0.1rem solid rgb(141, 137, 137);
     width: 60%;
-    height: 10vh;
-    background-color: #9aa5b3;
+    height: 5rem;
+    background-color: #d5dbe2;
+    box-shadow: 10px 5px 100px rgb(146, 141, 141);
 }
 
-a :visited{
-    color: hotpink;
+.btnFromHome:hover {
+    background-color: rgba(139, 130, 130, 0.658);
+    color: black;
 }
+
+.line{
+    border-bottom:  rgba(139, 130, 130, 0.658) 1px solid;
+    padding-top: 7%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* PARTIE RESPONSIVE */
 
 @media screen and (min-width: 600px) {
@@ -272,21 +242,13 @@ min-height: 200px;
         flex-direction: row;
     }
 
-    .automne {
+    .season {
+        width: 25%;
+
+    }
+    .seasonIMG {
         height: 70vh;
     }
-
-    .ete {
-        height: 70vh;
-        }
-
-    .printemps {
-        height: 70vh;
-        }
-
-    .hiver {
-        height: 70vh;
-        }
     
     .footerBox{
         display: flex;
@@ -373,12 +335,12 @@ min-height: 200px;
         margin-left: 10%;
         
     }
-}
-@media screen and (min-width: 600px) {
-   header {
+    }
+    @media screen and (min-width: 600px) {
+    header {
        width: 100%;
        height: auto;
-   }
+    }
     .images {
         display: flex;
         max-width: 800px;
@@ -450,10 +412,10 @@ min-height: 200px;
     box-shadow: 10px 5px 5px #9b9396;
     border: 2px solid black;
     font-size: 15px;
-}
+    }
     
 
-#message {
+    #message {
     height: 100px;
     margin-bottom: 20px;
     width: 100%;
