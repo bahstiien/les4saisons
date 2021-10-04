@@ -22,7 +22,7 @@ body{
 h1 {
 color: #666b70;
 font-family: 'Federo', sans-serif;
-font-size: 3,5em;
+font-size: 3.5rem;
 letter-spacing: 20px;
 text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
     #000000 1px -1px;
@@ -132,20 +132,21 @@ input:checked[type='checkbox']::before {
     font-family: 'Federo', sans-serif;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 12);
-    font-size: 7vh;
+    font-size: 5vh;
     text-align: center;
     margin-top: 50%;
     margin-left: -70%;
     visibility: hidden;
 }
 
+
 /* Footer */
 
 .footerBox {
-display: flex;
-justify-content: space-around;
-flex-direction: column;
-margin-top: 5% ;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 5% ;
 }
 
 .footerTitle {
