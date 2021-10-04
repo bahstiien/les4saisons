@@ -311,6 +311,8 @@ min-height: 200px;
     label {
         margin-top: 10px;
         margin-bottom: 10px;
+        font-family: 'Federo', sans-serif;
+        color: #868c92;
     }
 
     input {
@@ -390,6 +392,8 @@ min-height: 200px;
     margin-bottom: 20px;
     margin-top: 40px;
     font-size: 30px;
+    font-family: 'Federo', sans-serif;
+    color: #868c92;
     }
 
     input {
@@ -427,6 +431,8 @@ min-height: 200px;
     #OK {
     width: 25%;
     height: 35px;
+    font-family: 'Federo', sans-serif;
+    color: #868c92;
     }
 
     #OK:hover {
