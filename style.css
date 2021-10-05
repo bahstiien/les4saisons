@@ -277,12 +277,19 @@ min-height: 200px;
         width: 100%;
         height: auto;
     }
+    
+    img {
+        width: 20%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
     .images {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 30%;
+        flex-direction: row;
     }
+
     .selectSaison {
         width: 100%;
         margin-top: 20px;
@@ -300,7 +307,7 @@ min-height: 200px;
 
     }
 
-    #formContact {
+    #contactForm {
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -339,10 +346,10 @@ min-height: 200px;
     }
     }
     @media screen and (min-width: 600px) {
-    header {
+    /* header {
        width: 100%;
        height: auto;
-    }
+    } */
     .images {
         display: flex;
         max-width: 800px;
@@ -350,8 +357,7 @@ min-height: 200px;
         animation-duration: 10s;
         animation-name: mesImages;
         animation-iteration-count: infinite;
-        
-       }
+    }
     
        #caroussel {
         display: flex;
@@ -359,8 +365,8 @@ min-height: 200px;
         align-items: center; 
         margin-right: 10%;
         margin-left: 10%;
-        width: calc(100px*6);
-    }
+        width: calc(120px*5);
+        }
     
     @keyframes mesImages {
         0% {
@@ -378,7 +384,7 @@ min-height: 200px;
     }
         
 
-    #formContact {
+    #contactForm {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -436,7 +442,9 @@ min-height: 200px;
     }
 
     #OK:hover {
-    box-shadow:10px 5px 5px #000000;
+    background-color: black;
+    color: #ffffff;
+    box-shadow: 10px 5px 5px #FFFFFF;
     cursor: pointer;
     }
 
@@ -448,5 +456,18 @@ min-height: 200px;
     font-size: 30px;
     text-align: center;
     }
-    } 
+    
+    #file-upload-button {
+        width: 100px;
+        height: 100px;
+    }
+
+    .insertion {
+        width: 50%;
+        height: 20%;
+    }
+
+}
+
+     
 
