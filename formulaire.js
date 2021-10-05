@@ -1,34 +1,50 @@
 document
   .querySelector('#contactForm')
-  .addEventListener('submit', function (event) {
-    event.preventDefault();
+  .addEventListener('submit', function (evente) {
+    evente.preventDefault();
 
     let erreur;
-    let name = document.querySelector('#name');
-    let prenom = document.querySelector('#prenom');
-    let email = document.querySelector('#email');
-    let message = document.querySelector('#message');
+
+    let firstName     = document.querySelector('#firstName');
+    let lastName      = document.querySelector('#lastName');
+    let email         = document.querySelector('#email');
+    let title         = document.querySelector('#title');
+    let subtitle      = document.querySelector('#subtitle');
+    let place         = document.querySelector('#place');
+    let message       = document.querySelector('#message');
 
     if (!message.value) {
       erreur = 'Veuillez saisir votre message !';
     }
 
-    if (!email.value) {
-      erreur = 'Veuillez saisir votre émail !';
+    if (!place.value) {
+      erreur = "Veuillez saisir le lieu de l'évènement !";
     }
 
-    if (!prenom.value) {
+    if (!subtitle.value) {
+      erreur = 'Veuillez saisir un sous titre à votre évènement !';
+    }
+
+    if (!title.value) {
+      erreur = 'Veuillez saisir le titre de votre évènement !';
+    }
+
+    if (!email.value) {
+      erreur = 'Veuillez saisir votre email !';
+    }
+
+    if (!lastName.value) {
       erreur = 'Veuillez saisir votre prénom !';
     }
 
-    if (!name.value) {
+    if (!firstName.value) {
       erreur = 'Veuillez saisir votre nom !';
     }
 
     if (erreur) {
-      event.preventDefault();
+      evente.preventDefault();
       document.querySelector('#erreur').innerHTML = erreur;
     } else {
-      alert('Nous vous remercions pour votre message !');
+      alert("Nous vous remercions pour votre contribution !");
     }
   });
