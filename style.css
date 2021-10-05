@@ -398,17 +398,14 @@ height: 50%;
 display: flex;
 justify-content: center;
 
+}
 
-;
-
-    }
     .text {
        
         width : 70%;
-        height :10%;
+        height :30%;
        
-        
-      
+         
         
     }
         
@@ -475,7 +472,7 @@ justify-content: center;
    .text {
        width : 80%;
        height : 50%;
-       margin: 100px 10px 20px 10px;
+      /* margin: 100px 10px 20px 10px;*/
        
        
    }

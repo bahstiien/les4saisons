@@ -41,13 +41,6 @@ const events = [
 /*15*/{tittle : '', image1 : '' ,image2: '' ,textEvent :''},
 
 
-
-
-
-
-
-
-
 ]
 
 function createEvent ( tittle, imageUrl,imageUrl2, textEvent) {
@@ -66,7 +59,7 @@ function createEvent ( tittle, imageUrl,imageUrl2, textEvent) {
  
 
 const textDiv=document.querySelector ('.presentation');
-textDiv.style.width='90%';
+textDiv.style.width='75%';
 
 textDiv.style.padding= '50px', '100px', '20px', '50px';
  textDiv.innerHTML = textEvent; 
