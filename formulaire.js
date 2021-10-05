@@ -10,7 +10,7 @@ document
     let message = document.querySelector('#message');
 
     if (!message.value) {
-      erreur = 'Veuillez saisir votre message !';
+      erreur  = 'Veuillez saisir votre message !';
     }
 
     if (!email.value) {
@@ -32,3 +32,17 @@ document
       alert('Nous vous remercions pour votre message !');
     }
   });
+
+  //translate
+  let currentLanguage = "fr";
+
+const switchLanguageBtn = document.querySelector('#btnLangage');
+switchLanguageBtn.addEventListener('click', function() {
+   if(currentLanguage === "fr"){
+       currentLanguage = "en"; 
+   }
+   else {
+       currentLanguage = "fr";
+   }
+    i18n.changeLanguage(currentLanguage);
+});
