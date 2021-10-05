@@ -20,14 +20,14 @@ const events = [
 },
 /*6*/{tittle : 'Jazz à Vienne', image1 : 'images/jazzVienne.jpg' ,image2: 'img/javienne2.jpg' ,textEvent :'Le Festival Jazz à Vienne 2021 vous donne rendez-vous pour une nouvelle édition à Vienne du jeudi 24 juin 2021 au samedi 10 juillet 2021. Au programme du Festival Jazz à Vienne 2021, retrouvez de nombreux artistes et groupes de musique en concert à Vienne.'
 },
-/*7*/{tittle : 'Fête de la musique', image1 : '' ,image2: '' ,textEvent :''},
+/*7*/{tittle : 'Fête de la musique', image1 : 'img/fdlamusic.jpeg' ,image2: 'img/fdlmuisc2.jpeg' ,textEvent :'La Fête de la Musique 2021 ne ressemblera encore une fois à aucune autre. Elle aura bien lieu ce 21 juin mais exceptionnellement, elle se prolongera tout au long du mois de juillet. Retrouvez tout le programme du 21 juin au soir par arrondissements de Lyon'},
 
 
 /*Printemps*/
-/*8*/{tittle : '24h de l INSA', image1 : '' ,image2: '' ,textEvent :''},
-/*9*/{tittle : 'littérature', image1 : '' ,image2: '' ,textEvent :''},
-/*10*/{tittle : 'Magnifique printemps', image1 : '' ,image2: '' ,textEvent :''},
-/*11*/{tittle : '', image1 : '' ,image2: '' ,textEvent :''},
+/*8*/{tittle : '24h de l INSA', image1 : 'img/24hinsa.jpeg' ,image2: 'img/24insa2.jpeg' ,textEvent :'Festival des 24 heures de l INSA à Villeurbanne chaque année au mois de mai. 2 soirées de concerts, 2 journées d animations gratuites, 24 heures de courses sportives ! Entre amis ou en famille, nous vous attendons sur le campus de la Doua pour cet évènement organisé 100% par des étudiants'},
+/*9*/{tittle : '', image1 : '' ,image2: '' ,textEvent :''},
+/*10*/{tittle : 'Magnifique printemps', image1 : '' ,image2: '' ,textEvent :'Organisé chaque année au mois de mars, Magnifique Printemps est le festival de la poésie et de la francophonie. Né de la volonté de rassembler sur le territoire régional le Printemps des Poètes et la Semaine de la Langue française et de la Francophonie, Magnifique Printemps est une invitation à s’émerveiller par les mots ! La 5e édition du Magnifique Printemps se tiendra du 13 au 28 mars 2021 à Lyon et dans sa région'},
+/*11*/{tittle : 'Villa Gillet', image1 : '' ,image2: '' ,textEvent :'La Villa vous donne rendez-vous pour découvrir les projets d’éducation artistique et culturelle de la saison. Avec les écrivains invités des festivals Mode d’emploi (novembre 2020) et Assises Internationales du Roman (mai 2021), autant d’invitations à la lecture, à la pratique de l’écriture et au débat : Graines de lecteurs, qui propose aux classes de CM/6e de travailler de près et échanger avec un auteur jeunesse ; Air Collège, exercice d’écriture et cadavre exquis numérique sur villavoice.net ; le Bureau des idées et ses dix propositions lycéennes ; Graines de critiques littéraires, à destination des lycéens de la région.'},
 
 /*Automne*/
 
@@ -98,7 +98,7 @@ btnFestival.addEventListener ('click', ()=>{
 })
 const btnHarryPotter = document.querySelector ('#four')
 btnHarryPotter.addEventListener ('click', ()=>{
-  const harryPotter = events [3]
+  const harryPotter = events [8]
   createEvent(harryPotter.tittle, harryPotter.image1, harryPotter.image2, harryPotter.textEvent)
 })
 
