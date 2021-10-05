@@ -1,5 +1,5 @@
 document
-  .querySelector('#formContact')
+  .querySelector('#contactForm')
   .addEventListener('submit', function (event) {
     event.preventDefault();
 

@@ -16,14 +16,14 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 20px;
-  margin-left: 75px;
+  /* margin-right: 20px;
+  margin-left: 20px; */
 }
 
 h1 {
 color: #666b70;
 font-family: 'Federo', sans-serif;
-font-size: 3,5em;
+font-size: 3.5rem;
 letter-spacing: 20px;
 text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
     #000000 1px -1px;
@@ -41,6 +41,7 @@ text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
 
 h1:hover {
   color: black;
+  cursor: pointer;
 }
 
 h2 {
@@ -60,6 +61,7 @@ h2:hover {
 /* SELECT LANGUAGE */
 .btnLangage {
   transform: translate(-50%, -50%);
+  
 }
 
 /* BTN ENG */
@@ -68,7 +70,7 @@ input[type='checkbox'] {
   width: 80px;
   height: 40px;
   -webkit-appearance: none;
-  background: url(https://img.icons8.com/color/40/000000/great-britain-circular.png);
+  background: url(https://img.icons8.com/color/40/000000/great-britain-circular.png); 
   background-repeat: repeat-y;
   background-position: top right;
   outline: none;
@@ -102,7 +104,6 @@ input:checked[type='checkbox']::before {
     width: 100%;
     max-height: 500px;
     min-height: 100px;
-    position: relative;
     display: flex;
 }
 
@@ -133,20 +134,41 @@ input:checked[type='checkbox']::before {
     font-family: 'Federo', sans-serif;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 12);
-    font-size: 7vh;
+    font-size: 5vh;
     text-align: center;
     margin-top: 50%;
     margin-left: -70%;
     visibility: hidden;
+    opacity: 1.2;
 }
+/* Menu evenement */
+
+.boxEvent {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.listEvent{
+    font-family: 'Federo', sans-serif;
+    font-size: 2vh;
+    line-height: 1.2rem;
+    list-style: none;
+
+}
+
+.textSaison {
+    color: black;
+}
+
 
 /* Footer */
 
 .footerBox {
-display: flex;
-justify-content: space-around;
-flex-direction: column;
-margin-top: 5% ;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 1% ;
 }
 
 .footerTitle {
@@ -163,6 +185,7 @@ margin-top: 5% ;
 .imgSocial {
 width: 30px;
 height: 30px;
+cursor: pointer;
 }
 
 .boxLink {
@@ -181,9 +204,11 @@ height: 30px;
 
 /* BTN */
 .btnBox {
-    padding: 30px;
     display: flex;
     justify-content: center;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -264,46 +289,122 @@ min-height: 200px;
     .socialNetwork :hover{
         opacity: 20%;
     }
+}
+/* CSS Formulaire Responsive */ 
 
-
+@media screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        height: auto;
     }
-/* CSS du formulaire  */
+    
+    img {
+        width: 20%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
     .images {
         display: flex;
-        width: 300px;
-        height: 200px;
+        flex-direction: row;
+    }
+
+    .selectSaison {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-bottom: 20px;
+        display: flex;
+        border-radius: 5px;
+        
+    }
+
+    #selectSaison {
+        border-radius: 5px;
+        height: auto;
+        box-shadow: 10px 5px 5px #9b9396;
+
+    }
+
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: auto;
+        margin-left: 10%
+    }
+
+    label {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: 'Federo', sans-serif;
+        color: #868c92;
+    }
+
+    input {
+        border-radius: 5px;
+        box-shadow: 10px 5px 5px #9b9396;
+    }
+
+    #message {
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 10px 5px 5px #9b9396;
+    }
+
+    #OK:hover {
+        background: #FFBDD6;
+        cursor: pointer;
+        
+    }
+
+    #erreur {
+        font-size: 10px;
+        margin-left: 10%;
+        
+    }
+    }
+    @media screen and (min-width: 600px) {
+    /* header {
+       width: 100%;
+       height: auto;
+    } */
+    .images {
+        display: flex;
+        max-width: 800px;
+        height: 120px;
         animation-duration: 10s;
         animation-name: mesImages;
         animation-iteration-count: infinite;
-        width: calc(500px * 5);
-       }
+    }
     
        #caroussel {
-        /* overflow: auto; */
         display: flex;
         justify-content: center;
         align-items: center; 
         margin-right: 10%;
         margin-left: 10%;
-    }
+        width: calc(120px*5);
+        }
     
     @keyframes mesImages {
         0% {
-            transform: translate(0);
+            transform: translate(0px);
         }
         25% {
-            transform: translate(100px);
+            transform: translate(50px);
         }
         50% {
-            transform: translate(200px);
+            transform: translate(90px);
         }
         75% {
-            transform: translate(100px);
+            transform: translate(50px);
         }
     }
         
 
-#formContact {
+    #contactForm {
     display: flex;
 }
 
@@ -457,38 +558,87 @@ border: solid 1px;
 
 
 label {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    }
+
+    label {
     height: 30px;
     width: 50%;
     border-radius: 10px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 30px;
-}
+    font-family: 'Federo', sans-serif;
+    color: #868c92;
+    }
 
-input {
+    input {
     height: 25px;
-    width: 50%;
+    width: 25%;
     border-radius: 10px;
-    box-shadow: 10px 5px 5px #FFBDD6;
+    box-shadow: 10px 5px 5px #9b9396;
     font-size: 25px;
     margin-bottom: 30px;
-}
+    margin-top: 40px;
+    }
 
-#selectSaison {
+    #selectSaison {
     margin-top: 20px;
     height: 40px;
-    width: 50%;
+    width: 30%;
     border-radius: 10px;
-}
+    margin-left: 35%;
+    text-align: center;
+    box-shadow: 10px 5px 5px #9b9396;
+    border: 2px solid black;
+    font-size: 15px;
+    }
+    
 
-#message {
+    #message {
     height: 100px;
     margin-bottom: 20px;
-}
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 10px 5px 5px #9b9396;
+    }
 
-#OK {
+    #OK {
     width: 25%;
     height: 35px;
+    font-family: 'Federo', sans-serif;
+    color: #868c92;
+    }
+
+    #OK:hover {
+    background-color: black;
+    color: #ffffff;
+    box-shadow: 10px 5px 5px #FFFFFF;
+    cursor: pointer;
+    }
+
+    .labelMess {
+    text-align: center;
+    margin-bottom: 40px;
+    }
+    #erreur {
+    font-size: 30px;
+    text-align: center;
+    }
+    
+    #file-upload-button {
+        width: 100px;
+        height: 100px;
+    }
+
+    .insertion {
+        width: 50%;
+        height: 20%;
+    }
+
 }
 
 #OK:hover {
@@ -500,4 +650,5 @@ input {
 
  
     
+     
 
