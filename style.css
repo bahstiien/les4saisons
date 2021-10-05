@@ -5,6 +5,7 @@ header {
   background-position: bottom;
 }
 
+
 body{
   max-width: 1000px;
   margin-left: auto;
@@ -304,8 +305,156 @@ min-height: 200px;
 
 #formContact {
     display: flex;
-    flex-direction: column;
 }
+
+/* reponsive page saison*/
+@media screen and (max-width: 600px){ 
+
+
+    .description{ 
+       background-color: gray;
+       width: 100%;
+        height: 100%;
+        margin-top: 100px;
+        display:flex;
+        flex-direction: column;
+         align-items: center;
+        }
+
+        .allImg {
+           
+            display : flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            
+    width: 500px;
+    height: 500px;
+
+        }
+        .img1{
+          
+            width : 80%;
+            height: 30%;
+            margin: auto;
+            border: solid 1px;
+            
+        }
+        
+        .img2{
+          
+            width :80%;
+            height: 40%;
+            margin: auto ;
+            border: solid 1px;
+            
+        }
+
+
+
+        .tittleEvent {
+            display :flex;
+        justify-content: center;
+        color : black;
+        
+    }
+    .texMap{
+width : 100%;
+height: 50%;
+display: flex;
+justify-content: center;
+border: solid 1px;
+;
+
+    }
+    .text {
+        
+        width : 70%;
+        height : 10%;
+        margin: auto;
+        padding: 20px;
+        border: solid 1px;
+      
+        
+    }
+        
+        .map {
+            
+            width : 75%;
+            height : 30%;
+            margin: 20px;
+            border: solid 1px;
+    
+        }}
+@media screen and (min-width:600px) {
+    
+      
+        .description {
+      background-color: gray;
+       width: 1000px;
+       height: 1000px;
+       display: flex;
+      }
+
+    .allIm{
+        
+        display : flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        height: 1000px;
+        
+
+    }
+       .img1{
+    
+           width : 80%;
+           height: 30%;
+           margin: 50px 10px 20px 20px;
+           
+          
+           
+       }
+       
+       .img2{
+           width :80% ;
+           height: 30%;
+           margin: 50px 10px 50px 20px;
+         
+           
+       }
+       
+    
+       
+   }
+
+   .texMap {
+       width : 500px;
+       height: 1000px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       
+      
+   }
+   .text {
+       width : 80%;
+       height : 50%;
+       margin: 100px 10px 20px 10px;
+       
+       
+   }
+    .map {
+        width : 80%;
+        height : 30%;
+        margin: 50px 20px;
+        border: solid 1px
+
+};
+
+
+
+
+
 
 label {
     height: 30px;
@@ -346,3 +495,9 @@ input {
     background:  #FFBDD6;
     box-shadow:10px 5px 5px #000000;
 }
+
+
+
+ 
+    
+
