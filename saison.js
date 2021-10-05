@@ -26,7 +26,7 @@ const events = [
 /*Printemps*/
 /*8*/{tittle : '24h de l INSA', image1 : 'img/24hinsa.jpeg' ,image2: 'img/24insa2.jpeg' ,textEvent :'Festival des 24 heures de l INSA à Villeurbanne chaque année au mois de mai. 2 soirées de concerts, 2 journées d animations gratuites, 24 heures de courses sportives ! Entre amis ou en famille, nous vous attendons sur le campus de la Doua pour cet évènement organisé 100% par des étudiants'},
 /*9*/{tittle : '', image1 : '' ,image2: '' ,textEvent :''},
-/*10*/{tittle : 'Magnifique printemps', image1 : '' ,image2: '' ,textEvent :'Organisé chaque année au mois de mars, Magnifique Printemps est le festival de la poésie et de la francophonie. Né de la volonté de rassembler sur le territoire régional le Printemps des Poètes et la Semaine de la Langue française et de la Francophonie, Magnifique Printemps est une invitation à s’émerveiller par les mots ! La 5e édition du Magnifique Printemps se tiendra du 13 au 28 mars 2021 à Lyon et dans sa région'},
+/*10*/{tittle : 'Magnifique printemps', image1 : 'ptps2.jpeg' ,image2: 'ptmps.png' ,textEvent :'Organisé chaque année au mois de mars, Magnifique Printemps est le festival de la poésie et de la francophonie. Né de la volonté de rassembler sur le territoire régional le Printemps des Poètes et la Semaine de la Langue française et de la Francophonie, Magnifique Printemps est une invitation à s’émerveiller par les mots ! La 5e édition du Magnifique Printemps se tiendra du 13 au 28 mars 2021 à Lyon et dans sa région'},
 /*11*/{tittle : 'Villa Gillet', image1 : '' ,image2: '' ,textEvent :'La Villa vous donne rendez-vous pour découvrir les projets d’éducation artistique et culturelle de la saison. Avec les écrivains invités des festivals Mode d’emploi (novembre 2020) et Assises Internationales du Roman (mai 2021), autant d’invitations à la lecture, à la pratique de l’écriture et au débat : Graines de lecteurs, qui propose aux classes de CM/6e de travailler de près et échanger avec un auteur jeunesse ; Air Collège, exercice d’écriture et cadavre exquis numérique sur villavoice.net ; le Bureau des idées et ses dix propositions lycéennes ; Graines de critiques littéraires, à destination des lycéens de la région.'},
 
 /*Automne*/
@@ -37,7 +37,7 @@ const events = [
 
 /*13*/{tittle : 'Salon des Vignerons indépendants', image1 : 'img/salon vin.jpeg' ,image2: 'img/slonvin 2.jpeg' ,textEvent :'Les Vignerons Indépendants sont de retour et très heureux de pouvoir proposer leurs vins à la dégustation  après  quasi 2 ans d absence !On ne s est pas vu depuis  octobre 2019, que le temps nous  a paru long ! Au plaisir de vous revoir du 25 octobre au 1er novembre à la Halle Tony Garnier.' },
 
-/*14*/{tittle : 'Salon du chocolat', image1 : '' ,image2: '' ,textEvent :'Le plus grand événement mondial dédié au chocolat et au cacao revient enfin ! Rendez-vous du 28 octobre au 1er novembre 2021 à la Porte de Versailles pour un moment de fête et de retrouvailles. Défilé spectaculaire, démonstrations live, animations ludiques et concours prestigieux, cette 26ème édition s’annonce mémorable !'},
+/*14*/{tittle : 'Salon du chocolat', image1 : 'img/choc.jpeg' ,image2: 'img/choc2.jpeg' ,textEvent :'Le plus grand événement mondial dédié au chocolat et au cacao revient enfin ! Rendez-vous du 28 octobre au 1er novembre 2021 à la Porte de Versailles pour un moment de fête et de retrouvailles. Défilé spectaculaire, démonstrations live, animations ludiques et concours prestigieux, cette 26ème édition s’annonce mémorable !'},
 /*15*/{tittle : '', image1 : '' ,image2: '' ,textEvent :''},
 
 
@@ -98,7 +98,7 @@ btnFestival.addEventListener ('click', ()=>{
 })
 const btnHarryPotter = document.querySelector ('#four')
 btnHarryPotter.addEventListener ('click', ()=>{
-  const harryPotter = events [8]
+  const harryPotter = events []
   createEvent(harryPotter.tittle, harryPotter.image1, harryPotter.image2, harryPotter.textEvent)
 })
 
