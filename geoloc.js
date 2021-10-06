@@ -89,6 +89,7 @@ formEvent.addEventListener('submit', function (event) {
   getCoords(newEvent.addr).then((coords) => {
     if (coords) {
       newEvent.coords = coords;
+      console.log(newEvent);
       eventListInLocalStorage.push(newEvent);
 
       localStorage.setItem(
@@ -109,3 +110,36 @@ map.fitBounds([
   [45.731904, 4.825906],
   [45.773642, 4.823392],
 ]);
+
+// const group = [];
+// map.fitBounds(group.getBounds());
+
+// // tentative de creation d'un intinéraire!!
+function go() {
+  map = L.map('map').setView([47, 2.424], 6);
+  const lyrMaps = L.geoportalLayer.WMTS(
+    {
+      layer: 'GEOGRAPHICALGRIDSYSTEMS.MAPS',
+    },
+    {
+      // leafletParams
+      opacity: 0.7,
+    }
+  );
+  map.addLayer(lyrMaps);
+  const routeCtrl = L.geoportalControl.Route({});
+  map.addControl(routeCtrl);
+}
+
+Gp.Services.getConfig({
+  apiKey: 'jhyvi0fgmnuxvfv0zjzorvdn',
+  onSuccess: go,
+});
+
+let infoDiv = document.getElementById('info');
+infoDiv.innerHTML =
+  '<p> Extension Leaflet version ' +
+  Gp.leafletExtVersion +
+  ' (' +
+  Gp.leafletExtDate +
+  ')</p>';

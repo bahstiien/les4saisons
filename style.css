@@ -1,11 +1,11 @@
 header {
   background-image: url(img/Skyline.jpg);
   background-size: cover;
-  background-attachment: local ;
+  background-attachment: local;
   background-position: bottom;
 }
 
-body{
+body {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -20,21 +20,21 @@ body{
 }
 
 h1 {
-color: #666b70;
-font-family: 'Federo', sans-serif;
-font-size: 3,5em;
-letter-spacing: 20px;
-text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
+  color: #666b70;
+  font-family: 'Federo', sans-serif;
+  font-size: 3, 5em;
+  letter-spacing: 20px;
+  text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
     #000000 1px -1px;
 }
 
-h1 a{
-    text-decoration: none;
-    color: #666b70;
-font-family: 'Federo', sans-serif;
-font-size: 3,5em;
-letter-spacing: 20px;
-text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
+h1 a {
+  text-decoration: none;
+  color: #666b70;
+  font-family: 'Federo', sans-serif;
+  font-size: 3, 5em;
+  letter-spacing: 20px;
+  text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
     #000000 1px -1px;
 }
 
@@ -48,8 +48,8 @@ h2 {
   font-family: 'Federo', sans-serif;
   font-size: 2em;
   letter-spacing: 10px;
-  padding-top: 4vh ;
-  padding-bottom: 5vh ;
+  padding-top: 4vh;
+  padding-bottom: 5vh;
 }
 h2:hover {
   color: rgb(16, 66, 204);
@@ -85,307 +85,298 @@ input:checked[type='checkbox'] {
 }
 
 input:checked[type='checkbox']::before {
-    left: 40px;
-  }
+  left: 40px;
+}
 
 /* BOX PHOTO HOME */
 
 .boxBody {
-    display: flex;
-    flex-direction: column;
-    max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
 }
 
 .hiver {
-    width: 100%;
-    height: 40vh;
-    background-image: url(img/winter.png);
-    background-size: cover;
-    background-position: 25% 75%;
-    opacity: 90%;
+  width: 100%;
+  height: 40vh;
+  background-image: url(img/winter.png);
+  background-size: cover;
+  background-position: 25% 75%;
+  opacity: 90%;
 }
 
 .hiver:hover {
-    opacity: 30%;
-    width: 180%;
+  opacity: 30%;
+  width: 180%;
 }
 
-.hiver:hover .bodyP{
-    visibility: visible;
+.hiver:hover .bodyP {
+  visibility: visible;
 }
 
-.printemps {    
-    width: 100%;
-    height: 40vh;
-    background-image: url(img/spring.jpeg);
-    background-size: cover;
-    background-position: 45% 75%;
-    opacity: 90%;
+.printemps {
+  width: 100%;
+  height: 40vh;
+  background-image: url(img/spring.jpeg);
+  background-size: cover;
+  background-position: 45% 75%;
+  opacity: 90%;
 }
 
 .printemps:hover {
-
-    opacity: 30%;
-    width: 180%;
+  opacity: 30%;
+  width: 180%;
 }
 
-.printemps:hover .bodyP{
-    visibility: visible;
+.printemps:hover .bodyP {
+  visibility: visible;
 }
 
 .ete {
-    width: 100%;
-    height: 40vh;
-    background-image: url(img/BodyEte.jpeg);
-    background-size: cover;
-    background-position: 45% 75%;
-    opacity: 90%;
+  width: 100%;
+  height: 40vh;
+  background-image: url(img/BodyEte.jpeg);
+  background-size: cover;
+  background-position: 45% 75%;
+  opacity: 90%;
 }
 
 .ete:hover {
-
-    opacity: 30%;
-    width: 180%;
+  opacity: 30%;
+  width: 180%;
 }
 
-.ete:hover .bodyP{
-    visibility: visible;
+.ete:hover .bodyP {
+  visibility: visible;
 }
-
 
 .automne {
-    width: 100%;
-    height: 40vh;
-    background-image: url(img/fall.jpeg);
-    background-size: cover;
-    background-position: 45% 75%;
+  width: 100%;
+  height: 40vh;
+  background-image: url(img/fall.jpeg);
+  background-size: cover;
+  background-position: 45% 75%;
 }
 
 .automne:hover {
-
-    opacity:30%;
-    width: 180%;
-    visibility: visible;
+  opacity: 30%;
+  width: 180%;
+  visibility: visible;
 }
-.automne:hover .bodyP{
-    visibility: visible;
-    z-index: 1;
+.automne:hover .bodyP {
+  visibility: visible;
+  z-index: 1;
 }
 
 .bodyP {
-    font-family: 'Federo', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    color: black;
-    padding-top: 50%;
-    font-size: 5vh;
-    visibility: hidden;
+  font-family: 'Federo', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  padding-top: 50%;
+  font-size: 5vh;
+  visibility: hidden;
 }
 
-.textsaison{
-    color: black;
+.textsaison {
+  color: black;
 }
-
 
 /* Footer */
 
 .footerBox {
-display: flex;
-justify-content: space-around;
-flex-direction: column;
-margin-top: 5% ;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 5%;
 }
 
 .footerTitle {
-    font-family: 'Federo', sans-serif;
-    color: #25292e;
-    text-align: center;
+  font-family: 'Federo', sans-serif;
+  color: #25292e;
+  text-align: center;
 }
 
 .localisation {
-    font-family: 'Federo', sans-serif;
-    text-align: center;
-    color: #9aa5b3;
+  font-family: 'Federo', sans-serif;
+  text-align: center;
+  color: #9aa5b3;
 }
 .imgSocial {
-width: 30px;
-height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .boxLink {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footerBottom {
-    font-family: 'Federo', sans-serif;
-    text-align: center;
-    color: #25292e;
-    font-size: 0.7em;
+  font-family: 'Federo', sans-serif;
+  text-align: center;
+  color: #25292e;
+  font-size: 0.7em;
 }
 
 /* BTN */
 .btnBox {
-    padding: 30px;
-    display: flex;
-    justify-content: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .btnBox a {
-    font-family: 'Federo', sans-serif;
-    text-align: center;
-    color: #25292e;
-    text-decoration: none ;
-    font-size: 2em ;
+  font-family: 'Federo', sans-serif;
+  text-align: center;
+  color: #25292e;
+  text-decoration: none;
+  font-size: 2em;
 }
 
-.btnBox a:hover{
-    color: goldenrod ;
+.btnBox a:hover {
+  color: goldenrod;
 }
 
-.btnFromHome{
-
-   margin-top: 5% ;
-    border-radius: 30px;
-    width: 60%;
-    height: 10vh;
-    background-color: #9aa5b3;
+.btnFromHome {
+  margin-top: 5%;
+  border-radius: 30px;
+  width: 60%;
+  height: 10vh;
+  background-color: #9aa5b3;
 }
 
-a :visited{
-    color: hotpink;
+a :visited {
+  color: hotpink;
 }
 /* PARTIE RESPONSIVE */
 
 @media screen and (min-width: 600px) {
-    header {
-background-image: url(img/Skyline.jpg);
-background-size: cover;
-background-position: bottom;
-min-height: 200px;
-    }
+  header {
+    background-image: url(img/Skyline.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 200px;
+  }
 
-    .boxBody {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .automne {
-        height: 70vh;
-    }
-
-    .ete {
-        height: 70vh;
-        }
-
-    .printemps {
-        height: 70vh;
-        }
-
-    .hiver {
-        height: 70vh;
-        }
-
-
-    
-    .footerBox{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-right: 15%;
-        margin-left: 15%;
-    }
-
-    .boxLink {
-        display: flex;
-    }
-
-    .socialNetwork {
-        padding: 8px;
-    }
-
-    .socialNetwork :hover{
-        opacity: 20%;
-    }
-
-
-    }
-/* CSS du formulaire  */
-    .images {
-        display: flex;
-        width: 300px;
-        height: 200px;
-        animation-duration: 10s;
-        animation-name: mesImages;
-        animation-iteration-count: infinite;
-        width: calc(500px * 5);
-       }
-    
-       #caroussel {
-        /* overflow: auto; */
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        margin-right: 10%;
-        margin-left: 10%;
-    }
-    
-    @keyframes mesImages {
-        0% {
-            transform: translate(0);
-        }
-        25% {
-            transform: translate(100px);
-        }
-        50% {
-            transform: translate(200px);
-        }
-        75% {
-            transform: translate(100px);
-        }
-    }
-        
-
-#formContact {
+  .boxBody {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  .automne {
+    height: 70vh;
+  }
+
+  .ete {
+    height: 70vh;
+  }
+
+  .printemps {
+    height: 70vh;
+  }
+
+  .hiver {
+    height: 70vh;
+  }
+
+  .footerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+
+  .boxLink {
+    display: flex;
+  }
+
+  .socialNetwork {
+    padding: 8px;
+  }
+
+  .socialNetwork :hover {
+    opacity: 20%;
+  }
+}
+/* CSS du formulaire  */
+.images {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  animation-duration: 10s;
+  animation-name: mesImages;
+  animation-iteration-count: infinite;
+  width: calc(500px * 5);
 }
 
+#caroussel {
+  /* overflow: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
 
+@keyframes mesImages {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(100px);
+  }
+  50% {
+    transform: translate(200px);
+  }
+  75% {
+    transform: translate(100px);
+  }
+}
 
+#formContact {
+  display: flex;
+  flex-direction: column;
+}
 
 #selectSaison {
-    margin-top: 20px;
-    height: 40px;
-    width: 50%;
-    border-radius: 10px;
+  margin-top: 20px;
+  height: 40px;
+  width: 50%;
+  border-radius: 10px;
 }
 
 #message {
-    height: 100px;
-    margin-bottom: 20px;
+  height: 100px;
+  margin-bottom: 20px;
 }
 
 #OK {
-    width: 25%;
-    height: 35px;
+  width: 25%;
+  height: 35px;
 }
 
 #OK:hover {
-    background:  #FFBDD6;
-    box-shadow:10px 5px 5px #000000;
+  background: #ffbdd6;
+  box-shadow: 10px 5px 5px #000000;
 }
 
 /* géolocalisation tools */
 
-#mapid { 
-    padding:5px;    
-    height: 300px;
-    width: auto;
-    box-shadow: 0 0 50px #999;
- }
+#mapid {
+  padding: 5px;
+  height: 300px;
+  width: auto;
+  box-shadow: 0 0 50px #999;
+}
 
+#info {
+  padding: 5px;
+  width: 100%;
+  height: 20px;
+  font-family: monospace;
+}
 
 /* end of géolocalisation tools */
-
