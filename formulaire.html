@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translatable> Lyon's events throughout the seasons // Les évènements Lyonnais au fil des saisons</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+       
+</head>
+<body>
+<header>
+    <div class="topHeader">
+        <h1><a href="index.html" data-translatable> The Lyon of the seasons // Le Lyon des saisons</a></h1>
+       <div id="btnLangage">
+            <input type="checkbox" name=" btn ">
+        </div>
+    </div>
+</header>
+<h2 data-translatable> Contact form // Formulaire de contact</h2>
+<div id="caroussel">
+    <div class="images">
+        <img src="img/image2.jpg" alt="">
+        <img src="img/image3.jpg" alt="">
+        <img src="img/image5.jpg" alt="">
+        <img src="img/image4.jpg" alt="">
+        <img src="img/image1.jpg" alt="">
+    </div>
+    </div> 
+    <div class="selectSaison">
+        <select name="saison" id="selectSaison">
+            <option value="" data-translatable>Choose a saison // Choisir une saison</option>
+            <option value="spring" data-translatable>Spring // Printemps</option>
+            <option value="summer" data-translatable>Summer // Eté</option>
+            <option value="fall" data-translatable>Fall // Automne</option>
+            <option value="winter" data-translatable>Winter // Hiver</option>
+        </select>
+    </div>
+    
+    <section id="Contact">
+    <form id="contactForm">
+        <label for="firstName" data-translatable>firstName : // Nom :</label>
+        <input type="text" required="required" id="firstName">
+
+        <label for="lastName" data-translatable>lastName : // Prénom :</label>
+        <input type="text" id="prenom">
+
+        <label for="email" data-translatable>Your email : // Votre Email :</label>
+        <input type="text" required="required" id="email">
+       
+        <label for="title" data-translatable>Title of your contribution : // Titre de votre contribution :</label>
+        <input type="text" required="required" id="title">
+
+        <label for="subtitle" data-translatable>Subtitle of your contribution : // Sous-titre de votre contribution :</label>
+        <input type="text" required="required" id="subtitle"> 
+
+        <label for="date" data-translatable>Date of the event : // Date de l'évènement:</label>
+
+        <input type="date" id="date" name="trip-start"
+        value="2021-10-01"
+        min="2021-01-01" max="2030-12-31">
+
+        <label for="place" data-translatable>Location of the event : // Lieu de l'évènement :</label>
+        <input type="text" required="required" id="place">
+
+        <label for="insertion" data-translatable>Insertion of the image : // Insertion de votre image :</label>
+        <input type="file" class="insertion" name="insertion" accept="image/png, image/jpeg">
+
+        <label for="message" class="labelMess" data-translatable>Your message : // Votre message :</label>
+        <textarea id="message" type="text" required="required"></textarea>
+
+        <input type="submit" value="Envoyer">
+    </form>
+    <p style="color: red"; id="erreur"></p>
+</section>
+
+<footer>
+    <div class="footerBox">
+        <div class="socialBox">
+            <h3 class="footerTitle" data-translatable>Find us in our networks // Retrouvez nous sur nos réseaux</h3>
+            <div class="boxLink">
+                <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" class="imgSocial"/></a>
+                <a class="socialNetwork" href="#"><img src="https://img.icons8.com/glyph-neue/64/000000/instagram-new.png" class="imgSocial"/></a>
+                <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/pinterest--v1.png" class="imgSocial"/></a>
+                <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin--v1.png" class="imgSocial"/></a>
+                <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/github--v1.png" class="imgSocial"/></a>
+
+            </div>
+        </div>
+
+        <div class="infoBox">
+            <h3 class="footerTitle" data-translatable>Come and visit us // Venez nous rendre visite</h3>
+            <p class="localisation"> Wild Code School</p>
+            <p class="localisation">17 Rue Delandine, 69002 Lyon</p>
+        </div>
+    </div>
+    <p class="footerBottom">
+        Florence - Solène - Arthaud - Bastien - Nicolas
+    </p>
+</footer>
+
+<script src="domi18n.js"></script>
+<script>
+  const i18n = domI18n({
+    languages: ['en', 'fr']
+  });
+</script>
+
+
+<script src="formulaire.js"></script>
+</body>
+</html>
