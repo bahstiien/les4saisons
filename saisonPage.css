@@ -163,8 +163,14 @@ cursor: pointer;
 }
 
 .cardBody {
-    padding: 3rem;
+    padding: 2rem;
     margin-bottom: 2rem;
+    margin-right: 10%;
+    margin-left: 10%;
     font-family: 'Federo', sans-serif;
 }
 
+.card-name{
+  font-size: 3rem;
+  margin-left: 10%;
+}

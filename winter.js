@@ -3,7 +3,7 @@ const eventDataBase = [
     {season : 'winter', 
     name : 'Fête des lumières', 
     img : "img/image6.jpg", 
-    date : 'début décembre',
+    date : '<img src="https://img.icons8.com/material-outlined/13/000000/calendar.png"/>    début décembre',
     localisation : 'centre ville de Lyon',
     description : 'Du 8 au 11 décembre, Lyon la ville lumière allume toutes ses lumières, et la ville est emportée dans un merveilleux spectacle au fil de ses rues et ruelles. Le spectacle est grandiose et vaut vraiment le détour. La tradition veut que chaque famille lyonnaise participe à illuminer la ville avec des petits verres garnis d’une bougie, appelés des lumignons.'
     },
@@ -83,7 +83,7 @@ const eventDataBase = [
     
     {season :'fall',
     name : 'Vogue des Marrons', 
-    img1 :'img/image3.jpg' ,
+    img :'img/vdesmarrons.jpeg' ,
     imùg2 :'img/vdesmarrons.jpeg ',
     description : 'La vogue des marrons est confirmée ; Cette fête foraine traditionnelle lyonnaise et grand rendez vous croix-roussien revient du 2 Octobre au 14 Novembre. Véritable institution de la vie lyonnaise depuis plus de 150 ans qui annonce les premiers marrons, c’est l’évènement qui nous fait indéniablement retomber en enfance.'
     }, 
