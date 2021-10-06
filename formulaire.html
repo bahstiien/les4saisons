@@ -45,37 +45,37 @@
     
     <section id="Contact">
     <form id="contactForm">
-        <label for="name" data-translatable>Lastname : // Nom :</label>
-        <input type="text" id="name">
+        <label for="firstName" data-translatable>firstName : // Nom :</label>
+        <input type="text" required="required" id="firstName">
 
-        <label for="prenom" data-translatable>Firstname : // Prénom :</label>
+        <label for="lastName" data-translatable>lastName : // Prénom :</label>
         <input type="text" id="prenom">
 
         <label for="email" data-translatable>Your email : // Votre Email :</label>
-        <input type="text" id="email">
+        <input type="text" required="required" id="email">
        
-        <label for="titre" data-translatable>Title of your contribution : // Titre de votre contribution :</label>
-        <input type="text" id="titre">
+        <label for="title" data-translatable>Title of your contribution : // Titre de votre contribution :</label>
+        <input type="text" required="required" id="title">
 
-        <label for="soustitre" data-translatable>Subtitle of your contribution : // Sous-titre de votre contribution :</label>
-        <input type="text" id="soustitre"> 
+        <label for="subtitle" data-translatable>Subtitle of your contribution : // Sous-titre de votre contribution :</label>
+        <input type="text" required="required" id="subtitle"> 
 
         <label for="date" data-translatable>Date of the event : // Date de l'évènement:</label>
 
-        <input type="date" id="start" name="trip-start"
+        <input type="date" id="date" name="trip-start"
         value="2021-10-01"
         min="2021-01-01" max="2030-12-31">
 
-        <label for="lieu" data-translatable>Location of the event : // Lieu de l'évènement :</label>
-        <input type="text" id="lieu">
+        <label for="place" data-translatable>Location of the event : // Lieu de l'évènement :</label>
+        <input type="text" required="required" id="place">
 
         <label for="insertion" data-translatable>Insertion of the image : // Insertion de votre image :</label>
         <input type="file" class="insertion" name="insertion" accept="image/png, image/jpeg">
 
         <label for="message" class="labelMess" data-translatable>Your message : // Votre message :</label>
-        <textarea id="message"></textarea>
+        <textarea id="message" type="text" required="required"></textarea>
 
-        <input type="submit" id="OK">
+        <input type="submit" value="Envoyer">
     </form>
     <p style="color: red"; id="erreur"></p>
 </section>
