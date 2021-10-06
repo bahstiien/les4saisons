@@ -1,4 +1,3 @@
-
     let eventInWinter = eventDataBase.filter((key) => key.season.includes('winter'));
 
 // console.log(eventInWinter);

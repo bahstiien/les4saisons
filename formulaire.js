@@ -10,5 +10,5 @@ btnSendMessage.addEventListener("click", function(event) {
   let newEvent = {
     season, name, title, img, date, place, description
   }
-localStorage.setItem(“nom”, document.querySelector(‘#name’).value);
-console.log(document.querySelector(‘#name’).value);
+localStorage.setItem("nom", document.querySelector("#name").value);
+console.log(document.querySelector("#name").value);
