@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Winter Event</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./saisonPage.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""
+  />
+
+  </head>
+
+  <body>
+    <header>
+        <div class="topHeader">
+            <h1> <a href="index.html">  Le Lyon des saisons </a></h1>
+            <div id="btnLangage">
+                <input type="checkbox" name=" btn ">
+            </div>
+        </div>
+    </header>
+
+    <h2>Les évènements d'hiver</h2>
+
+    <div class="eventCards">
+      <!-- <div class="eventCard">
+        <div class="cardHeader"> -->
+          <!-- <div class="cardImg"></div> -->
+        </div>
+        <div class="cardBody">
+          <!-- <h2 class="cardName"> </h2> -->
+                  <div class="mapid"></div>        
+          </div>
+      </div>
+    </div>
+    <footer></footer>
+        <div class="line"></div>
+
+        <div class="footerBox">
+            <div class="socialBox">
+                <h3 class="footerTitle"> Retrouvez nous sur nos réseaux</h3>
+                <div class="boxLink">
+                    <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" class="imgSocial"/></a>
+                    <a class="socialNetwork" href="#"><img src="https://img.icons8.com/glyph-neue/64/000000/instagram-new.png" class="imgSocial"/></a>
+                    <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/pinterest--v1.png" class="imgSocial"/></a>
+                    <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin--v1.png" class="imgSocial"/></a>
+                    <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/github--v1.png" class="imgSocial"/></a>
+
+                </div>
+            </div>
+
+            <div class="infoBox">
+                <h3 class="footerTitle"> Venez nous rendre visite</h3>
+                <p class="localisation"> Wild Code School</p>
+                <p class="localisation">17 Rue Delandine, 69002 Lyon</p>
+            </div>
+        </div>
+        <p class="footerBottom">
+            Florence - Solène - Arthaud - Bastien - Nicolas
+        </p>
+    </footer>
+    <script src="eventsDataBase.js"></script>
+    <script type="module" src="spring.js"></script>
+    <script
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""
+  ></script>
+
+  <script src="geoloc.js"></script>
+
+  </body>
+</html>
