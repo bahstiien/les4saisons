@@ -1,72 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les évènements Lyonnais au fil des saisons</title>
+<html>
+  <head>
+    <title>Winter Event</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&display=swap" rel="stylesheet">
-<link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./saisonPage.css" />
+  </head>
 
-</head>
-
-
-<body>
+  <body>
     <header>
         <div class="topHeader">
-            <h1>Le Lyon des saisons</h1>
+            <h1> <a href="index.html">  Le Lyon des saisons </a></h1>
             <div id="btnLangage">
                 <input type="checkbox" name=" btn ">
             </div>
         </div>
     </header>
-    
-<!--bloc la page-->
-    <div class=winterPage>
-        <div class=caroussel>
-            <h2 class='title'>Les événements d'hiver</h2>
-            <div class = 'description'>
-                
 
-                   <div class ='allIm'>
+    <h2>Les évènements d'hiver</h2>
 
-                       <div class = 'img1'> <img class= "image1" src= "images/images.jpeg" alt ="image1"/>
-
-
-                       </div>
-                        
-                            <div class = 'img2'>
-                                <img class = "image2" src="images/images.jpeg" alt = "image2"/>
-                            </div>
-
-
-                   </div>
-                   
-                
-
-                
-
-                <div class= 'texMap'>    
-
-                    <div class = 'text'>
-                    
-<p class = "presentation">default text</p>
-    
-                       
-                    </div>
-                    <div class = 'map'>
-    
-                    </div>
-
-
-                </div>
-            </div>
+    <div class="eventCards">
+      <!-- <div class="eventCard">
+        <div class="cardHeader"> -->
+          <!-- <div class="cardImg"></div> -->
         </div>
+        <div class="cardBody">
+          <!-- <h2 class="cardName"> </h2> -->
+        </div>
+      </div>
     </div>
-    
+
     <footer>
+        <div class="line"></div>
+
         <div class="footerBox">
             <div class="socialBox">
                 <h3 class="footerTitle"> Retrouvez nous sur nos réseaux</h3>
@@ -90,10 +60,6 @@
             Florence - Solène - Arthaud - Bastien - Nicolas
         </p>
     </footer>
-    
-    
-    <script src="./saison.js"></script>
-
-
-</body>
+    <script type="module" src="winter.js"></script>
+  </body>
 </html>
