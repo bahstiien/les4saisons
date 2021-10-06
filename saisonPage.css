@@ -174,3 +174,10 @@ cursor: pointer;
   font-size: 3rem;
   margin-left: 10%;
 }
+
+#mapid {
+  padding: 5px;
+  height: 300px;
+  width: auto;
+  box-shadow: 0 0 50px #999;
+}

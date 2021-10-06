@@ -9,6 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./saisonPage.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""
+  />
+
   </head>
 
   <body>
@@ -30,11 +37,11 @@
         </div>
         <div class="cardBody">
           <!-- <h2 class="cardName"> </h2> -->
-        </div>
+                  <div class="mapid"></div>        
+          </div>
       </div>
     </div>
-
-    <footer>
+    <footer></footer>
         <div class="line"></div>
 
         <div class="footerBox">
@@ -60,6 +67,15 @@
             Florence - Solène - Arthaud - Bastien - Nicolas
         </p>
     </footer>
+    <script src="eventsDataBase.js"></script>
     <script type="module" src="winter.js"></script>
+    <script
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""
+  ></script>
+
+  <script src="geoloc.js"></script>
+
   </body>
 </html>

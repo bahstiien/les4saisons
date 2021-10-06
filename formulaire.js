@@ -1,37 +1,14 @@
-document
-  .querySelector('#contactForm')
-  .addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    let erreur;
-    let name = document.querySelector('#name');
-    let prenom = document.querySelector('#prenom');
-    let email = document.querySelector('#email');
-    let message = document.querySelector('#message');
-
-    if (!message.value) {
-      erreur = 'Veuillez saisir votre message !';
-    }
-
-    if (!email.value) {
-      erreur = 'Veuillez saisir votre émail !';
-    }
-
-    if (!prenom.value) {
-      erreur = 'Veuillez saisir votre prénom !';
-    }
-
-    if (!name.value) {
-      erreur = 'Veuillez saisir votre nom !';
-    }
-
-    if (erreur) {
-      event.preventDefault();
-      document.querySelector('#erreur').innerHTML = erreur;
-    } else {
-      alert('Nous vous remercions pour votre message !');
-    }
-  });
-
-
-  
+const btnSendMessage = document.querySelector(".submit");
+btnSendMessage.addEventListener("click", function(event) {
+ event.preventDefault();
+  const season        = document.querySelector("#season");
+  const name          = document.querySelector("#name");
+  const title         = document.querySelector("#title");
+  const img           = document.querySelector(".img");
+  const place         = document.querySelector("#place");
+  const description   = document.querySelector("#description");
+  let newEvent = {
+    season, name, title, img, date, place, description
+  }
+localStorage.setItem(“nom”, document.querySelector(‘#name’).value);
+console.log(document.querySelector(‘#name’).value);
