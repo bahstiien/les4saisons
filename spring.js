@@ -112,7 +112,7 @@ const eventDataBase = [
     }
     ]
 
-    let eventInWinter = eventDataBase.filter((key) => key.season.includes('winter'));
+    let eventInSpring = eventDataBase.filter((key) => key.season.includes('spring'));
 
 // console.log(eventInWinter);
 
@@ -157,6 +157,6 @@ function createCardEvent(name, date, localisation, description, img) {
     cardBody.appendChild(cardDescription)
 }
 
-for (let i = 0; i < eventInWinter.length; i++) {
-    createCardEvent(eventInWinter[i].name, eventInWinter[i].date, eventInWinter[i].localisation, eventInWinter[i].description, eventInWinter[i].img)
+for (let i = 0; i < eventInSpring.length; i++) {
+    createCardEvent(eventInSpring[i].name, eventInSpring[i].date, eventInSpring[i].localisation, eventInSpring[i].description, eventInSpring[i].img)
 }

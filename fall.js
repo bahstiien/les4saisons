@@ -60,7 +60,7 @@ const eventDataBase = [
     name :'Fête de la musique', 
     img :'img/fdlamusic.jpeg', 
     date : '21 juin', 
-    localisation: 'centre ville de Lyon'
+    localisation: 'centre ville de Lyon',
     description :'La Fête de la Musique 2021 ne ressemblera encore une fois à aucune autre. Elle aura bien lieu ce 21 juin mais exceptionnellement, elle se prolongera tout au long du mois de juillet. Retrouvez tout le programme du 21 juin au soir par arrondissements de Lyon'
     }, 
     
@@ -112,7 +112,7 @@ const eventDataBase = [
     }
     ]
 
-    let eventInWinter = eventDataBase.filter((key) => key.season.includes('winter'));
+    let eventInFall = eventDataBase.filter((key) => key.season.includes('fall'));
 
 // console.log(eventInWinter);
 
@@ -157,6 +157,6 @@ function createCardEvent(name, date, localisation, description, img) {
     cardBody.appendChild(cardDescription)
 }
 
-for (let i = 0; i < eventInWinter.length; i++) {
-    createCardEvent(eventInWinter[i].name, eventInWinter[i].date, eventInWinter[i].localisation, eventInWinter[i].description, eventInWinter[i].img)
+for (let i = 0; i < eventInFall.length; i++) {
+    createCardEvent(eventInFall[i].name, eventInFall[i].date, eventInFall[i].localisation, eventInFall[i].description, eventInFall[i].img)
 }
