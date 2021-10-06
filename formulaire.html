@@ -45,37 +45,37 @@
     
     <section id="Contact">
     <form id="contactForm">
-        <label for="name">Nom :</label>
-        <input type="text" id="name">
+        <label for="firstName">Nom :</label>
+        <input type="text" required="required" id="firstName">
 
-        <label for="prenom">Prénom :</label>
-        <input type="text" id="prenom">
+        <label for="lastName">Prénom :</label>
+        <input type="text" required="required" id="lastName">
 
         <label for="email">Votre Email :</label>
-        <input type="text" id="email">
+        <input type="text" required="required" id="email">
        
-        <label for="titre">Titre de votre contribution :</label>
-        <input type="text" id="titre">
+        <label for="title">Titre de votre contribution :</label>
+        <input type="text" required="required" id="title">
 
-        <label for="soustitre">Sous-titre de votre contribution :</label>
-        <input type="text" id="soustitre"> 
+        <label for="subtitle">Sous-titre de votre contribution :</label>
+        <input type="text" required="required" id="subtitle"> 
 
         <label for="date">Date de l'évènement:</label>
 
-        <input type="date" id="start" name="trip-start"
+        <input type="date" id="date" name="trip-start"
         value="2021-10-01"
         min="2021-01-01" max="2030-12-31">
 
-        <label for="lieu">Lieu de l'évènement :</label>
-        <input type="text" id="lieu">
+        <label for="place">Lieu de l'évènement :</label>
+        <input type="text" required="required" id="place">
 
         <label for="insertion">Insertion de votre image :</label>
         <input type="file" class="insertion" name="insertion" accept="image/png, image/jpeg">
 
         <label for="message" class="labelMess">Votre message :</label>
-        <textarea id="message"></textarea>
+        <textarea id="message" type="text" required="required"></textarea>
 
-        <input type="submit" id="OK">
+        <input type="submit" value="Envoyer">
     </form>
     <p style="color: red"; id="erreur"></p>
 </section>
