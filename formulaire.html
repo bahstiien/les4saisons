@@ -34,7 +34,7 @@
     </div>
     </div> 
     <div class="selectSaison">
-        <select name="saison" id="selectSaison">
+        <select name="saison" id="saison">
             <option value="">Choisir une saison</option>
             <option value="spring">Printemps</option>
             <option value="summer">Eté</option>
@@ -46,7 +46,7 @@
     <section id="Contact">
     <form id="contactForm">
         <label for="firstName">Nom :</label>
-        <input type="text" required="required" id="firstName">
+        <input type="text" required="required" id="name">
 
         <label for="lastName">Prénom :</label>
         <input type="text" required="required" id="lastName">
@@ -70,12 +70,12 @@
         <input type="text" required="required" id="place">
 
         <label for="insertion">Insertion de votre image :</label>
-        <input type="file" class="insertion" name="insertion" accept="image/png, image/jpeg">
+        <input type="text" class="img" name="insertion" placeholder="url de l'image">
 
         <label for="message" class="labelMess">Votre message :</label>
-        <textarea id="message" type="text" required="required"></textarea>
+        <textarea id="description" type="text" required="required"></textarea>
 
-        <input type="submit" value="Envoyer">
+        <input type="submit"  class="submit" value="Envoyer">
     </form>
     <p style="color: red"; id="erreur"></p>
 </section>
