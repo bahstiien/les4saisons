@@ -413,7 +413,7 @@ min-height: 200px;
 
 
     .description{ 
-       background-color: gray;
+       
        width: 100%;
         height: 100%;
         margin-top: 100px;
@@ -425,28 +425,28 @@ min-height: 200px;
         .allImg {
            
             display : flex;
-            justify-content: flex-end;
             flex-direction: column;
+            justify-content: flex-end;
             
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 
         }
         .img1{
           
-            width : 80%;
+            width : 100%;
             height: 30%;
             margin: auto;
-            border: solid 1px;
+            padding-top: 20px;
             
         }
         
         .img2{
           
-            width :80%;
+            width :100%;
             height: 40%;
             margin: auto ;
-            border: solid 1px;
+            padding-top: 100px;
             
         }
 
@@ -463,18 +463,15 @@ width : 100%;
 height: 50%;
 display: flex;
 justify-content: center;
-border: solid 1px;
-;
 
-    }
+}
+
     .text {
-        
+       
         width : 70%;
-        height : 10%;
-        margin: auto;
-        padding: 20px;
-        border: solid 1px;
-      
+        height :30%;
+       
+         
         
     }
         
@@ -534,15 +531,21 @@ border: solid 1px;
        display: flex;
        flex-direction: column;
        align-items: center;
+       justify-content: flex-end;
        
       
    }
    .text {
        width : 80%;
        height : 50%;
-       margin: 100px 10px 20px 10px;
+      /* margin: 100px 10px 20px 10px;*/
        
        
+   }
+
+   .presentation{
+       font-size: 15pt;
+
    }
     .map {
         width : 80%;
