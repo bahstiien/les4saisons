@@ -1,25 +1,32 @@
-let currentLanguage = "fr";
+let currentLanguage = 'fr';
 
 const switchLanguageBtn = document.querySelector('#btnLangage');
-switchLanguageBtn.addEventListener('click', function() {
-   if(currentLanguage === "fr"){
-       currentLanguage = "en"; 
-   }
-   else {
-       currentLanguage = "fr";
-   }
-    i18n.changeLanguage(currentLanguage);
+switchLanguageBtn.addEventListener('click', function () {
+  if (currentLanguage === 'fr') {
+    currentLanguage = 'en';
+  } else {
+    currentLanguage = 'fr';
+  }
+  i18n.changeLanguage(currentLanguage);
 });
 
-const listEventInSpring = eventDataBase.filter((key) => key.season.includes('spring'));
-const listEventInSummer = eventDataBase.filter((key) => key.season.includes('summer'));
-const listEventInFall = eventDataBase.filter((key) => key.season.includes('fall'));
-const listEventInWinter = eventDataBase.filter((key) => key.season.includes('winter'));
+const listEventInSpring = eventDataBase.filter((key) =>
+  key.season.includes('spring')
+);
+const listEventInSummer = eventDataBase.filter((key) =>
+  key.season.includes('summer')
+);
+const listEventInFall = eventDataBase.filter((key) =>
+  key.season.includes('fall')
+);
+const listEventInWinter = eventDataBase.filter((key) =>
+  key.season.includes('winter')
+);
 
 const springIMG = document.querySelector('.springIMG');
 const summerIMG = document.querySelector('.summerIMG');
 const fallIMG = document.querySelector('.fallIMG');
-const winterIMG = document.querySelector('.winterIMG')
+const winterIMG = document.querySelector('.winterIMG');
 const listEvent = document.querySelector('.listEvent');
 const saut = document.querySelector('.saut');
 const showListSpring = document.querySelectorAll('liSpring');
@@ -39,8 +46,8 @@ springIMG.addEventListener('mouseover', () => {
 });
 
 springIMG.addEventListener('mouseout', () => {
-    let none=document.querySelector('.unnone');
-    none.classList.toggle("none");
+  let none = document.querySelector('.unnone');
+  none.classList.toggle('none');
 });
 
 listEventInSummer.forEach((event) => {
@@ -98,26 +105,7 @@ winterIMG.addEventListener('mouseout', () => {
 // });
 // activeTextSpring();
 
-
-
 // showListSpring.style.display = 'none';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // summerIMG.addEventListener('mouseover', () => {(listEventInSummer.forEach((event) => {
 //     const listEvent = document.querySelector('listEvent');
@@ -146,7 +134,6 @@ winterIMG.addEventListener('mouseout', () => {
 //     console.log(`${event.name}`)
 // }))})
 
-
 // listEventInSummer.forEach((event) => {
 //     const newEvent = document.createElement("li");
 //     newEvent.classList.add('liSummer')
@@ -170,14 +157,13 @@ winterIMG.addEventListener('mouseout', () => {
 
 // function creadListEvent(seasonTab) {
 
-
 //     const listFallEvent = document.createElement('div');
 //     listFallEvent.classList.add('BoxlistEvent');
 //     listEvent.appendChild(listFallEvent)
 
 //     const listFall = document.createElement('p');
 //     listFall.classList.add('listEvent');
-//     listFall.innerHTML = name; 
+//     listFall.innerHTML = name;
 //     listFallEvent.appendChild(listFall)
 //  };
 
@@ -188,5 +174,3 @@ winterIMG.addEventListener('mouseout', () => {
 // creadListEvent(listEventInFall)
 
 // creadListEvent(listEventInFall)
-
-
