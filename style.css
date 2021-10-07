@@ -10,8 +10,8 @@ header {
   background-attachment: local;
   background-position: bottom;
   filter: drop-shadow(0 0 3rem #9fa6ac);
-  border-radius: 3%;
-  box-shadow: 10px 5px 100px rgb(146, 141, 141);
+  border-radius: 0 0 30px 30px;
+  box-shadow: 10px 5px 100px rgb(223, 218, 218);
 }
 
 body {
@@ -169,28 +169,10 @@ input:checked[type='checkbox']::before {
   color: #666b70;;
   line-height: 4rem;
   font-size: 1.5rem;
-}
-
-.liSpring {
-color: black;
-display: block;
-
-}
-.springactive {
-  color: #000000;
+  font-family: 'Federo', sans-serif;
+  text-align: center;
   display: block;
-}
-
-.liSummer {
-  color: yellowgreen;
-}
-
-.liFall {
-  color: red;
-}
-
-.liWinter {
-  color: blue;
+  
 }
 
 .none {
@@ -202,7 +184,7 @@ display: block;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  margin-top: 1%;
+  margin-top: 3%;
 }
 
 .footerTitle {
@@ -241,7 +223,7 @@ display: block;
   display: flex;
   justify-content: center;
   cursor: pointer;
-  margin-top: 12rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -383,15 +365,18 @@ display: block;
     border-radius: 5px;
     box-shadow: 10px 5px 5px #9b9396;
   }
-
-  #OK:hover {
-    background: #ffbdd6;
-    cursor: pointer;
+  .submit {
+    margin-top: 10px;
+    width: 40%;
+    margin-left: 30%;
+    font-family: 'Federo', sans-serif;
+    color: #868c92; 
   }
-
-  #erreur {
-    font-size: 10px;
-    margin-left: 10%;
+  .submit:hover {
+    background-color: black;
+    color: #ffffff;
+    box-shadow: 10px 5px 5px #ffffff;
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 600px) {
@@ -434,14 +419,14 @@ display: block;
   }
     #season {
     margin-top: 20px;
-    height: 40px;
+    height: 50px;
     width: 30%;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-left: 35%;
     text-align: center;
     box-shadow: 10px 5px 5px #9b9396;
     border: 2px solid black;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Federo', sans-serif;
     color: #868c92;
     }
@@ -455,7 +440,7 @@ display: block;
     label {
     height: 40px;
     width: 30%;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
     margin-top: 20px;
     font-size: 30px;
@@ -464,21 +449,23 @@ display: block;
     }
 
     input {
-    height: 25px;
-    width: 35%;
-    border-radius: 10px;
+    height: 35px;
+    width: 40%;
+    border-radius: 5px;
     box-shadow: 10px 5px 5px #9b9396;
     font-size: 25px;
     margin-bottom: 30px;
     margin-top: 20px;
     max-width: 50%;
+    font-size: 20px;
+    padding-left: 5px;
   }
   
   #message {
     height: 100px;
     margin-bottom: 20px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 2px solid black;
     box-shadow: 10px 5px 5px #9b9396;
   }
@@ -500,16 +487,17 @@ display: block;
   } 
 
   .labelMess {
-    text-align: center;
     margin-bottom: 40px;
   }
 
   #description {
     width: 50%;
-    height: 80px;
+    height: 130px;
     box-shadow: 10px 5px 5px #9b9396;
     border: 2px solid black;
     border-radius: 10px;
+    font-size: 20px;
+    padding-left: 5px;
   }
 
   #file-upload-button {
@@ -517,11 +505,11 @@ display: block;
     height: 100px;
   }
 
-  .insertion {
+  /* .insertion {
     margin-top: 30px;
     width: 50%;
     height: 20%;
-  }
+  } */
 }
 
 /* géolocalisation tools */
