@@ -10,7 +10,7 @@ btnSendMessage.addEventListener('click', function (event) {
   const title = document.querySelector('#title').value;
   const img = document.querySelector('#img').value;
   const date = document.querySelector('#date').value;
-  const place = document.querySelector('#place').value;
+  const localisation = document.querySelector('#localisation').value;
   const description = document.querySelector('#description').value;
 
   let newEvent = {
@@ -19,10 +19,10 @@ btnSendMessage.addEventListener('click', function (event) {
     title,
     img,
     date,
-    place,
+    localisation,
     description,
   };
   eventDataBase.push(newEvent);
   console.log(newEvent);
-  localStorage.setItem("events", JSON.stringify(eventDataBase)) 
+  localStorage.setItem('events', JSON.stringify(eventDataBase));
 });
