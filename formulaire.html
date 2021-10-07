@@ -34,36 +34,22 @@
     </div>
     </div> 
     <div class="selectSaison">
-<<<<<<< HEAD
-        <select name="saison" id="saison">
-            <option value="">Choisir une saison</option>
-            <option value="spring">Printemps</option>
-            <option value="summer">Eté</option>
-            <option value="fall">Automne</option>
-            <option value="winter">Hiver</option>
-=======
-        <select name="saison" id="selectSaison">
+        <select name="season" id="season" type="text">
             <option value="" data-translatable>Choose a saison // Choisir une saison</option>
-            <option value="spring" data-translatable>Spring // Printemps</option>
-            <option value="summer" data-translatable>Summer // Eté</option>
-            <option value="fall" data-translatable>Fall // Automne</option>
-            <option value="winter" data-translatable>Winter // Hiver</option>
->>>>>>> 6d9f2153aa7d2e7dac990bb2c3ca7898d4f5d989
+            <option value="spring" type="text" data-translatable>Spring // Printemps</option>
+            <option value="summer" type="text"data-translatable>Summer // Eté</option>
+            <option value="fall" type="text" data-translatable>Fall // Automne</option>
+            <option value="winter" type="text" data-translatable>Winter // Hiver</option>
         </select>
     </div>
     
     <section id="Contact">
     <form id="contactForm">
-<<<<<<< HEAD
-        <label for="firstName">Nom :</label>
+        <label for="name" data-translatable>firstName : // Nom :</label>
         <input type="text" required="required" id="name">
-=======
-        <label for="firstName" data-translatable>firstName : // Nom :</label>
-        <input type="text" required="required" id="firstName">
->>>>>>> 6d9f2153aa7d2e7dac990bb2c3ca7898d4f5d989
 
         <label for="lastName" data-translatable>lastName : // Prénom :</label>
-        <input type="text" id="prenom">
+        <input type="text" required="required" id="lastName">
 
         <label for="email" data-translatable>Your email : // Votre Email :</label>
         <input type="text" required="required" id="email">
@@ -83,23 +69,15 @@
         <label for="place" data-translatable>Location of the event : // Lieu de l'évènement :</label>
         <input type="text" required="required" id="place">
 
-<<<<<<< HEAD
-        <label for="insertion">Insertion de votre image :</label>
-        <input type="text" class="img" name="insertion" placeholder="url de l'image">
+        <label for="insertion" data-translatable>Insertion of the URL : // Insertion de l'URL de votre image :</label>
+        <input type="text" required="required" id="img">
 
-        <label for="message" class="labelMess">Votre message :</label>
-        <textarea id="description" type="text" required="required"></textarea>
-=======
-        <label for="insertion" data-translatable>Insertion of the image : // Insertion de votre image :</label>
-        <input type="file" class="insertion" name="insertion" accept="image/png, image/jpeg">
-
-        <label for="message" class="labelMess" data-translatable>Your message : // Votre message :</label>
-        <textarea id="message" type="text" required="required"></textarea>
->>>>>>> 6d9f2153aa7d2e7dac990bb2c3ca7898d4f5d989
+        <label for="description" class="labelMess" data-translatable>Your message : // Votre message :</label>
+        <textarea  type="text" required="required" id="description"></textarea>
 
         <input type="submit"  class="submit" value="Envoyer">
     </form>
-    <p style="color: red"; id="erreur"></p>
+    
 </section>
 
 <footer>
@@ -132,9 +110,10 @@
   const i18n = domI18n({
     languages: ['en', 'fr']
   });
+  
 </script>
-
-
 <script src="formulaire.js"></script>
+
+
 </body>
 </html>
