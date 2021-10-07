@@ -9,6 +9,8 @@ header {
   background-size: cover;
   background-attachment: local;
   background-position: bottom;
+  filter: drop-shadow(0 0 3rem #9fa6ac);
+  border-radius: 3%;
 }
 
 body {
@@ -170,6 +172,12 @@ input:checked[type='checkbox']::before {
 
 .liSpring {
 color: black;
+display: block;
+
+}
+.springactive {
+  color: #000000;
+  display: block;
 }
 
 .liSummer {
@@ -177,13 +185,16 @@ color: black;
 }
 
 .liFall {
-  color: peru;
+  color: red;
 }
 
 .liWinter {
-  color: lightseagreen;
+  color: blue;
 }
 
+.none {
+  display: none;
+}
 /* Footer */
 
 .footerBox {
@@ -252,7 +263,7 @@ color: black;
   border: 0.1rem solid rgb(141, 137, 137);
   width: 60%;
   height: 5rem;
-  background-color: #d5dbe2;
+  background-color: #9fa6ac;
   box-shadow: 10px 5px 100px rgb(146, 141, 141);
 }
 

@@ -20,49 +20,88 @@ const springIMG = document.querySelector('.springIMG');
 const summerIMG = document.querySelector('.summerIMG');
 const fallIMG = document.querySelector('.fallIMG');
 const winterIMG = document.querySelector('.winterIMG')
-const listEvent = document.querySelector('listEvent');
+const listEvent = document.querySelector('.listEvent');
 
-springIMG.addEventListener('mouseover', () => {(listEventInSpring.forEach((event) => {
-    // const newEvent = document.createElement("p");
-    // newEvent.classList.add('liSpring')
-    // newEvent.innerHTML = `${event.name}`;
-    // listEvent.appendChild(newEvent);
-    console.log(`${event.name}`)
-}))})
+const showListSpring = document.querySelectorAll('liSpring');
 
-summerIMG.addEventListener('mouseover', () => {(listEventInSummer.forEach((event) => {
-    // const listEvent = document.querySelector('listEvent');
-    // const newEvent = document.createElement("p");
-    // newEvent.classList.add('liSpring')
-    // newEvent.innerHTML = `${event.name}`;
-    // listEvent.appendChild(newEvent);
-    console.log(`${event.name}`)
-}))})
+let listSpringName = []
 
-fallIMG.addEventListener('mouseover', () => {(listEventInFall.forEach((event) => {
-    // const listEvent = document.querySelector('listEvent');
-    // const newEvent = document.createElement("p");
-    // newEvent.classList.add('liSpring')
-    // newEvent.innerHTML = `${event.name}`;
-    // listEvent.appendChild(newEvent);
-    console.log(`${event.name}`)
-}))})
+listEventInSpring.forEach((event) => {
+    listSpringName.push(event.name) + ' '});
+    
+springIMG.addEventListener('mouseover', () => {
+    let none=document.querySelector('.unnone');
+    none.innerHTML= listSpringName;
+    none.classList.remove("none");
+    // console.log(listEventInSpring[0].name)
+});
 
-winterIMG.addEventListener('mouseover', () => {(listEventInWinter.forEach((event) => {
-    // const listEvent = document.querySelector('listEvent');
-    // const newEvent = document.createElement("p");
-    // newEvent.classList.add('liSpring')
-    // newEvent.innerHTML = `${event.name}`;
-    // listEvent.appendChild(newEvent);
-    console.log(`${event.name}`)
-}))})
 
-// listEventInSpring.forEach((event) => {
+springIMG.addEventListener('mouseout', () => {
+    let none=document.querySelector('.unnone');
+    none.classList.toggle("none");
+});
+
+// function activeTextSpring () {
+
+// springIMG.addEventListener('mouseover',() => {
+//     if (showListSpring.style.display ='block');{
+//         showListSpring.style.display = 'block'
+//     }
+//     else {
+//         (showListSpring.style.display = 'none')
+//     }
+// });
+// activeTextSpring();
+
+
+
+// showListSpring.style.display = 'none';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// summerIMG.addEventListener('mouseover', () => {(listEventInSummer.forEach((event) => {
+//     const listEvent = document.querySelector('listEvent');
 //     const newEvent = document.createElement("p");
 //     newEvent.classList.add('liSpring')
-//     newEvent.innerText = `${event.name}`;
-//     listEvent.appendChild(newEvent)
-// })
+//     newEvent.innerHTML = `${event.name}`;
+//     listEvent.appendChild(newEvent);
+//     console.log(`${event.name}`)
+// }))})
+
+// fallIMG.addEventListener('mouseover', () => {(listEventInFall.forEach((event) => {
+//     const listEvent = document.querySelector('listEvent');
+//     const newEvent = document.createElement("p");
+//     newEvent.classList.add('liSpring')
+//     newEvent.innerHTML = `${event.name}`;
+//     listEvent.appendChild(newEvent);
+//     console.log(`${event.name}`)
+// }))})
+
+// winterIMG.addEventListener('mouseover', () => {(listEventInWinter.forEach((event) => {
+//     const listEvent = document.querySelector('listEvent');
+//     const newEvent = document.createElement("p");
+//     newEvent.classList.add('liSpring')
+//     newEvent.innerHTML = `${event.name}`;
+//     listEvent.appendChild(newEvent);
+//     console.log(`${event.name}`)
+// }))})
+
 
 // listEventInSummer.forEach((event) => {
 //     const newEvent = document.createElement("li");
@@ -92,18 +131,17 @@ winterIMG.addEventListener('mouseover', () => {(listEventInWinter.forEach((event
 //     listFallEvent.classList.add('BoxlistEvent');
 //     listEvent.appendChild(listFallEvent)
 
-
 //     const listFall = document.createElement('p');
 //     listFall.classList.add('listEvent');
-//     listFall.innerHTML = name;
+//     listFall.innerHTML = name; 
 //     listFallEvent.appendChild(listFall)
-// };
+//  };
 
-// for (let i = 0; i < seasonTab.length; i++) {
-//     creadListEvent(seasonTab[i].name)
-// };
+//  for (let i = 0; i < seasonTab.length; i++) {
+//      creadListEvent(seasonTab[i].name)
+//  };
 
-
+// creadListEvent(listEventInFall)
 
 // creadListEvent(listEventInFall)
 
