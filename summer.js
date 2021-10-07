@@ -60,7 +60,7 @@ const eventDataBase = [
     name :'Fête de la musique', 
     img :'img/fdlamusic.jpeg', 
     date : '21 juin', 
-    localisation: 'centre ville de Lyon'
+    localisation: 'centre ville de Lyon',
     description :'La Fête de la Musique 2021 ne ressemblera encore une fois à aucune autre. Elle aura bien lieu ce 21 juin mais exceptionnellement, elle se prolongera tout au long du mois de juillet. Retrouvez tout le programme du 21 juin au soir par arrondissements de Lyon'
     }, 
     
