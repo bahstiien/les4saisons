@@ -24,24 +24,66 @@ const listEvent = document.querySelector('.listEvent');
 
 const showListSpring = document.querySelectorAll('liSpring');
 
-let listSpringName = []
+let listSpringName = [];
+let listSummerName = [];
+let listFallName = [];
+let listWinterName = [];
 
 listEventInSpring.forEach((event) => {
-    listSpringName.push(event.name) + ' '});
+    listSpringName.push(event.name)});
     
 springIMG.addEventListener('mouseover', () => {
     let none=document.querySelector('.unnone');
     none.innerHTML= listSpringName;
     none.classList.remove("none");
-    // console.log(listEventInSpring[0].name)
 });
-
 
 springIMG.addEventListener('mouseout', () => {
     let none=document.querySelector('.unnone');
     none.classList.toggle("none");
 });
 
+listEventInSummer.forEach((event) => {
+    listSummerName.push(event.name) + ' '});
+    
+summerIMG.addEventListener('mouseover', () => {
+    let none=document.querySelector('.unnone');
+    none.innerHTML= listSummerName;
+    none.classList.remove("none");
+});
+
+summerIMG.addEventListener('mouseout', () => {
+    let none=document.querySelector('.unnone');
+    none.classList.toggle("none");
+});
+
+listEventInFall.forEach((event) => {
+    listFallName.push(event.name) + ' '});
+    
+fallIMG.addEventListener('mouseover', () => {
+    let none=document.querySelector('.unnone');
+    none.innerHTML= listFallName;
+    none.classList.remove("none");
+});
+
+fallIMG.addEventListener('mouseout', () => {
+    let none=document.querySelector('.unnone');
+    none.classList.toggle("none");
+});
+
+listEventInWinter.forEach((event) => {
+    listWinterName.push(event.name) + ' '});
+    
+winterIMG.addEventListener('mouseover', () => {
+    let none=document.querySelector('.unnone');
+    none.innerHTML= listWinterName;
+    none.classList.remove("none");
+});
+
+winterIMG.addEventListener('mouseout', () => {
+    let none=document.querySelector('.unnone');
+    none.classList.toggle("none");
+});
 // function activeTextSpring () {
 
 // springIMG.addEventListener('mouseover',() => {

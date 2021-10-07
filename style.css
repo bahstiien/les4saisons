@@ -168,6 +168,11 @@ input:checked[type='checkbox']::before {
   color: #666b70;;
   line-height: 4rem;
   font-size: 1.5rem;
+  font-family: 'Federo', sans-serif;
+  color: #25292e;
+  text-align: center;
+  display: block;
+  
 }
 
 .liSpring {
@@ -178,18 +183,6 @@ display: block;
 .springactive {
   color: #000000;
   display: block;
-}
-
-.liSummer {
-  color: yellowgreen;
-}
-
-.liFall {
-  color: red;
-}
-
-.liWinter {
-  color: blue;
 }
 
 .none {
