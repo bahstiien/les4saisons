@@ -178,7 +178,7 @@ input:checked[type='checkbox']::before {
 .cardImg {
   border-radius: 10px 10px 0 0;
   background-size: cover;
-  background-position: center;
+  background-position: center top 30%;
   background-image: url();
   height: 200px;
   width: 100%;
