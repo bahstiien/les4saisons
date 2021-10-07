@@ -81,7 +81,7 @@ const eventDataBase = [
     }, 
     
     {season : 'spring', 
-    name :'Villa Gillet :Littérrature live festival', 
+    name :'Villa Gillet : Littérrature live festival', 
     img : 'img/villa gillet.jpeg',
     date : '25 au 30 mai' ,
     localisation: 'Lyon 4e' ,
