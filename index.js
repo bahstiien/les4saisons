@@ -21,7 +21,7 @@ const summerIMG = document.querySelector('.summerIMG');
 const fallIMG = document.querySelector('.fallIMG');
 const winterIMG = document.querySelector('.winterIMG')
 const listEvent = document.querySelector('.listEvent');
-
+const saut = document.querySelector('.saut');
 const showListSpring = document.querySelectorAll('liSpring');
 
 let listSpringName = [];
@@ -34,7 +34,7 @@ listEventInSpring.forEach((event) => {
     
 springIMG.addEventListener('mouseover', () => {
     let none=document.querySelector('.unnone');
-    none.innerHTML= listSpringName;
+    none.innerHTML= (listEventInSpring[0]).name +' ~ '+ (listEventInSpring[1]).name +' ~ '+ (listEventInSpring[2]).name;
     none.classList.remove("none");
 });
 
@@ -48,7 +48,7 @@ listEventInSummer.forEach((event) => {
     
 summerIMG.addEventListener('mouseover', () => {
     let none=document.querySelector('.unnone');
-    none.innerHTML= listSummerName;
+    none.innerHTML= (listEventInSummer[0]).name +' ~ '+ (listEventInSummer[1]).name +' ~ '+ (listEventInSummer[2]).name+' ~ '+(listEventInSummer[3]).name;
     none.classList.remove("none");
 });
 
@@ -62,7 +62,8 @@ listEventInFall.forEach((event) => {
     
 fallIMG.addEventListener('mouseover', () => {
     let none=document.querySelector('.unnone');
-    none.innerHTML= listFallName;
+    none.innerHTML = (listEventInFall[0]).name +' ~ '+ (listEventInFall[1]).name +' ~ '+ (listEventInFall[2]).name;
+
     none.classList.remove("none");
 });
 
@@ -76,7 +77,8 @@ listEventInWinter.forEach((event) => {
     
 winterIMG.addEventListener('mouseover', () => {
     let none=document.querySelector('.unnone');
-    none.innerHTML= listWinterName;
+    none.innerHTML= (listEventInWinter[0]).name +' ~ '+ (listEventInWinter[1]).name +' ~ '+ (listEventInWinter[2]).name+' ~ '+(listEventInWinter[3]).name;
+    ;
     none.classList.remove("none");
 });
 

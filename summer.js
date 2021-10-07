@@ -1,4 +1,5 @@
 
+
     let eventInSummer = eventDataBase.filter((key) => key.season.includes('summer'));
 
 const eventCards = document.querySelector(".eventCards");

@@ -4,7 +4,7 @@ const eventDataBase = [
     name : 'Fête des lumières', 
     img : "img/image6.jpg", 
     date : 'début décembre',
-    localisation : 'centre ville de Lyon',
+    localisation : '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11135.386147949603!2d4.8386116!3d45.75422244999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4ac9e1fd2f%3A0xabc36e768b27c9a0!2sWild%20Code%20School%20-%20Formation%20d%C3%A9veloppeur%20web%20%26%20data%20analyst!5e0!3m2!1sfr!2sfr!4v1633616058552!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
     description : 'Du 8 au 11 décembre, Lyon la ville lumière allume toutes ses lumières, et la ville est emportée dans un merveilleux spectacle au fil de ses rues et ruelles. Le spectacle est grandiose et vaut vraiment le détour. La tradition veut que chaque famille lyonnaise participe à illuminer la ville avec des petits verres garnis d’une bougie, appelés des lumignons.'
     },
     

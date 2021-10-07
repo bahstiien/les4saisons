@@ -1,3 +1,5 @@
+
+
     let eventInSpring = eventDataBase.filter((key) => key.season.includes('spring'));
 
 const eventCards = document.querySelector(".eventCards");

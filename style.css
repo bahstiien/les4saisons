@@ -10,7 +10,8 @@ header {
   background-attachment: local;
   background-position: bottom;
   filter: drop-shadow(0 0 3rem #9fa6ac);
-  border-radius: 3%;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 10px 5px 100px rgb(223, 218, 218);
 }
 
 body {
@@ -40,7 +41,7 @@ h1 a {
   text-decoration: none;
   color: #666b70;
   font-family: 'Federo', sans-serif;
-  font-size: 3, 5em;
+  font-size: 3,5rem;
   letter-spacing: 20px;
   text-shadow: #9aa5b3 1px 1px, #9aa5b3 -1px 1px, #000000 -2px -2px,
     #000000 1px -1px;
@@ -169,20 +170,9 @@ input:checked[type='checkbox']::before {
   line-height: 4rem;
   font-size: 1.5rem;
   font-family: 'Federo', sans-serif;
-  color: #25292e;
   text-align: center;
   display: block;
   
-}
-
-.liSpring {
-color: black;
-display: block;
-
-}
-.springactive {
-  color: #000000;
-  display: block;
 }
 
 .none {
@@ -194,7 +184,7 @@ display: block;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  margin-top: 1%;
+  margin-top: 3%;
 }
 
 .footerTitle {
@@ -233,7 +223,7 @@ display: block;
   display: flex;
   justify-content: center;
   cursor: pointer;
-  margin-top: 12rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -344,7 +334,7 @@ display: block;
     border-radius: 5px;
   }
 
-  #selectSaison {
+  #season {
     border-radius: 5px;
     height: auto;
     box-shadow: 10px 5px 5px #9b9396;
@@ -387,10 +377,11 @@ display: block;
   }
 }
 @media screen and (min-width: 600px) {
-  /* header {
-       width: 100%;
-       height: auto;
-    } */
+  header {
+    width: 100%;
+    height: auto;
+    }
+
   .images {
     display: flex;
     max-width: 800px;
@@ -423,13 +414,118 @@ display: block;
       transform: translate(50px);
     }
   }
+    #season {
+    margin-top: 20px;
+    height: 40px;
+    width: 30%;
+    border-radius: 10px;
+    margin-left: 35%;
+    text-align: center;
+    box-shadow: 10px 5px 5px #9b9396;
+    border: 2px solid black;
+    font-size: 15px;
+    font-family: 'Federo', sans-serif;
+    color: #868c92;
+    }
 
-  #contactForm {
+    #contactForm {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+
+    label {
+    height: 40px;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Federo', sans-serif;
+    color: #868c92;
+    }
+
+    input {
+    height: 25px;
+    width: 35%;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #9b9396;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    max-width: 50%;
+  }
+  
+  #message {
+    height: 100px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 10px 5px 5px #9b9396;
   }
 
+  .submit {
+    width: 25%;
+    height: 35px;
+    font-family: 'Federo', sans-serif;
+    color: #868c92;
+    margin-left: 37%;
+    margin-top: 50px;
+    
+  }
+  .submit:hover {
+    background-color: black;
+    color: #ffffff;
+    box-shadow: 10px 5px 5px #ffffff;
+    cursor: pointer;
+  } 
+
+  .labelMess {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #description {
+    width: 50%;
+    height: 80px;
+    box-shadow: 10px 5px 5px #9b9396;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  #file-upload-button {
+    width: 100px;
+    height: 100px;
+  }
+
+  .insertion {
+    margin-top: 30px;
+    width: 50%;
+    height: 20%;
+  }
+}
+
+/* géolocalisation tools */
+
+#mapid {
+  padding: 5px;
+  height: 300px;
+  width: auto;
+  box-shadow: 0 0 50px #999;
+}
+
+#info {
+  padding: 5px;
+  width: 100%;
+  height: 20px;
+  font-family: monospace;
+}
+
+/* end of géolocalisation tools */
+
   /* reponsive page saison*/
-  @media screen and (max-width: 600px) {
+ /* /* @media screen and (max-width: 600px) {
     .description {
       background-color: gray;
       width: 100%;
