@@ -1,4 +1,4 @@
-const eventDataBase = [ 
+const eventDataBase = JSON.parse(localStorage.getItem("events"))||[ 
 
     {season : 'winter', 
     name : 'Fête des lumières', 
@@ -110,4 +110,5 @@ const eventDataBase = [
     localisation:'Centre des congrès',
     description :'Le plus grand événement mondial dédié au chocolat et au cacao revient enfin ! Rendez-vous du 28 octobre au 1er novembre 2021 à la Porte de Versailles pour un moment de fête et de retrouvailles. Défilé spectaculaire, démonstrations live, animations ludiques et concours prestigieux, cette 26ème édition s’annonce mémorable !'
     }
-    ]
+    
+]
