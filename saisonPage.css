@@ -67,6 +67,16 @@ h2:hover {
   transition: 0.5s;
 }
 
+h3 {
+  color: #868c92;
+  text-align: left;
+  margin-left: 10px;
+  font-family: 'Federo', sans-serif;
+  font-size: 2em;
+  letter-spacing: 10px;
+  padding-top: 4vh;
+}
+
 /* SELECT LANGUAGE */
 .btnLangage {
   transform: translate(-50%, -50%);
@@ -175,21 +185,29 @@ input:checked[type='checkbox']::before {
 }
 
 .cardBody :not(.card-name) {
-  padding: 2rem;
-  margin-bottom: 2rem;
-  margin-right: 10%;
-  margin-left: 10%;
+  padding: 1rem;
+  margin-right: auto;
+  margin-left: auto;
   font-family: 'Federo', sans-serif;
   display: flex;
   flex-direction: row;
 }
 
-.card-name {
-  font-size: 3rem;
-  margin-left: 10%;
+.cardDescription {
+  margin-bottom: 20px;
+  color: #2b2c2e;
+  text-align: justify;
+  font-family: 'Federo', sans-serif;
+  font-size: medium;
+  letter-spacing: 1px;
 }
 
-.cardMaps.localisation {
-  display: flex;
-  justify-content: center;
+.cardDate {
+  color: #868c92;
+  text-align: center;
+  margin-left: 30px;
+  font-family: 'Federo', sans-serif;
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 3px;
 }
