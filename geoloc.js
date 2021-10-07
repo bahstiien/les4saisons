@@ -13,8 +13,12 @@ if (eventListInLocalStorage === null) {
       coords: { lat: 45.773642, lng: 4.823392 },
     },
     {
-      name: 'Place Bellecour',
-      coords: { lat: 45.757456, lng: 4.832211 },
+      name: 'INSA Villeurbanne',
+      coords: { lat: 45.783091, lng: 4.875989 },
+    },
+    {
+      name: 'Espace Pandora',
+      coords: { lat: 45.698731, lng: 4.884469 },
     },
   ];
 }
@@ -112,4 +116,4 @@ map.fitBounds([
 ]);
 
 // const group = [];
-// map.fitBounds(group.getBounds());
+// map.fitBounds(group.getBounds());/
