@@ -132,8 +132,8 @@ export default {eventInWinter}
 //   imageEvent2.style.height = 'auto';
  
 
-// const textDiv=document.querySelector ('.presentation');
-// textDiv.style.width='80%';
+const textDiv=document.querySelector ('.presentation');
+textDiv.style.width='75%';
 
 // textDiv.style.padding= '50px', '100px', '20px', '50px';
 //  textDiv.innerHTML = textEvent; 
