@@ -1,4 +1,4 @@
-const eventDataBase = [
+const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
     {
         season: 'winter',
         name: 'Fête des lumières',

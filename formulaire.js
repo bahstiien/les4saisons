@@ -2,9 +2,9 @@
 
 const btnSendMessage = document.querySelector('.submit');
 
+
 btnSendMessage.addEventListener('click', function (event) {
   event.preventDefault();
-
   const season = document.querySelector('#season').value;
   const name = document.querySelector('#title').value;
   const title = document.querySelector('#title').value;
