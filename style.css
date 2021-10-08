@@ -85,6 +85,7 @@ input[type='checkbox'] {
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
   border: 1px solid #9aa5b3;
+  cursor: pointer;
 }
 /* BTN FRAN */
 input:checked[type='checkbox'] {

@@ -25,4 +25,5 @@ btnSendMessage.addEventListener('click', function (event) {
   eventDataBase.push(newEvent);
   console.log(newEvent);
   localStorage.setItem('events', JSON.stringify(eventDataBase));
+  document.location.href = `${season}.html`;
 });

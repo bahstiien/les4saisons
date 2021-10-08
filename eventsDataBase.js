@@ -1,7 +1,7 @@
 const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
     {
         season: 'winter',
-        name: 'Festival of Lights // Fête des lumières',
+        name: 'Fête des lumières',
         img: "img/image6.jpg",
         date: 'from 8 to 11 December // du 8 au 11 décembre',
         localisation:
@@ -12,8 +12,8 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
 
     {
         season: 'winter',
-        name: 'Christmas Market // Marché de Noël',
-        img: "img/Marchénoel2.jpeg",
+        name: 'Marché de Noël',
+        img: "img/marchenoel.jpg",
         date: 'from 10 to 26 December // du 10 au 26 décembre',
         localisation:
             '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.031311383808!2d4.826495214929049!3d45.75051822231473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4cb1320b1d%3A0x7876d5c8897af4f5!2sPl.%20Carnot%2C%2069002%20Lyon!5e0!3m2!1sfr!2sfr!4v1633631865236!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -22,8 +22,8 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
 
     {
         season: 'winter',
-        name: 'Book festival // Fête du livre',
-        img: "img/livre.jpeg",
+        name: 'Fête du livre',
+        img: "img/fdlivre.jpg",
         date: 'from 5 to 12 January // du 5 au 12 janvier',
         localisation:
             '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.016793579966!2d4.82324341492824!3d45.73075802363921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea2b4073f885%3A0xc820a00fb26b3185!2sHalle%20Tony%20Garnier!5e0!3m2!1sfr!2sfr!4v1633631936655!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -32,8 +32,8 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
 
     {
         season: 'winter',
-        name: 'Harry Potter show // Spectacle Harry Potter',
-        img: "img/hpotter.jpeg",
+        name: 'Spectacle Harry Potter',
+        img: "img/harryp.jpg.webp",
         date: 'from 2 to 7 February // du 2 au 7 février',
         localisation:
             '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.016793579966!2d4.82324341492824!3d45.73075802363921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea2b4073f885%3A0xc820a00fb26b3185!2sHalle%20Tony%20Garnier!5e0!3m2!1sfr!2sfr!4v1633631936655!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -42,7 +42,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
 
     {
         season: 'summer',
-        name: 'Dance Biennial // Biennale de la danse',
+        name: 'Biennale de la danse',
         img: 'img/image2.jpg',
         date: 'from 1st to 16 June // du 1er au 16 juin',
         localisation:
@@ -52,8 +52,8 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
 
     {
         season: 'summer',
-        name: 'Fourvière Nights // Nuits de fourvière',
-        img: 'images/fourvières.jpg',
+        name: 'Nuits de fourvière',
+        img: 'img/nuitdf.jpg',
         date: 'from 1st June to 30 July // du 1er juin au 30 juillet',
         localisation:
             '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.569838692446!2d4.818379591547391!3d45.75976906747603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ebaee66e16b7%3A0x74cc83cde490e075!2sLes%20Nuits%20de%20Fourvi%C3%A8re!5e0!3m2!1sfr!2sfr!4v1633632157796!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -62,7 +62,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
 
     {
         season: 'summer',
-        name: 'Jazz in Vienne // Jazz à Vienne',
+        name: 'Jazz à Vienne',
         img: 'images/jazzVienne.jpg',
         date: 'from 23 June to 10 July // du 23 juin au 10 juillet',
         localisation:
@@ -72,8 +72,8 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
 
     {
         season: 'summer',
-        name: 'Music festival // Fête de la musique',
-        img: 'img/fdlamusic.jpeg',
+        name: 'Fête de la musique',
+        img: 'img/fdm2.png',
         date: ' 21 June // du 21 juin',
         localisation:
             '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.478026615345!2d4.8291940748305215!3d45.7563779020629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea52244ab879%3A0xb0956981fd027394!2sBellecour%20-%20H%C3%B4tel%20Dieu%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633631785879!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -82,8 +82,8 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
 
     {
         season: 'spring',
-        name: '24h of INSA // 24h de l INSA',
-        img: 'img/24hinsa.jpeg',
+        name: '24h de l INSA',
+        img: 'img/insalyon.jpg',
         date: 'may // mai',
         localisation:
             '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.394282235534!2d4.8760097149303485!3d45.783328120114206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c01fae0783ab%3A0xe24e66663726d2eb!2sINSA%20Lyon!5e0!3m2!1sfr!2sfr!4v1633632329806!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -92,8 +92,8 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
 
     {
         season: 'spring',
-        name: 'Beautiful spring // Magnifique printemps',
-        img: 'ptps2.jpeg',
+        name: 'Magnifique printemps',
+        img: 'img/magnifique.jpg',
         date: 'from 13 to 28 March // du 13 au 28 mars',
         localisation:
             '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.6092387569292!2d4.8822863155012755!3d45.69881337910443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c24238f13c51%3A0x2d67da23a57177bd!2sEspace%20Pandora!5e0!3m2!1sfr!2sfr!4v1633632485274!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -102,8 +102,8 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
 
     {
         season: 'spring',
-        name: 'Villa Gillet // Villa Gillet',
-        img: '/img/villa gillet.jpeg',
+        name: 'Villa Gillet',
+        img: 'img/litterature2.png',
         date: 'from 25 to 30 May // du 25 au 30 mai',
         localisation:
             '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.7985035316415!2d4.814460615503942!3d45.77522827910581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb11a186fe69%3A0x8e968f549f9a62e0!2sVilla%20Gillet!5e0!3m2!1sfr!2sfr!4v1633632648872!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -112,8 +112,8 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
 
     {
         season: 'fall',
-        name: 'Chestnut Vogue // Vogue des Marrons',
-        img: 'img/image3.jpg',
+        name: 'Vogue des Marrons',
+        img: 'img/vdm.jpg',
         date: 'from 2 October to 14 November // du 2 octobre au 14 novembre',
         localisation:
             '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2735.056027365508!2d4.826760518231703!3d45.773917377984596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb035a00781f%3A0xc239549b51301fe0!2sBd%20de%20la%20Croix-Rousse%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633632718846!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -122,8 +122,8 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
 
     {
         season: 'fall',
-        name: 'Independent Winegrowers Exhibition // Salon des Vignerons indépendants',
-        img: 'img/salonvin.jpeg',
+        name: 'Salon des Vignerons indépendants',
+        img: 'img/blanc-rouge-vin.jpg',
         date: 'from 19 to 22 November // du 19 au 22 novembre',
         localisation:
             '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.016793579966!2d4.82324341492824!3d45.73075802363921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea2b4073f885%3A0xc820a00fb26b3185!2sHalle%20Tony%20Garnier!5e0!3m2!1sfr!2sfr!4v1633631936655!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -131,8 +131,8 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
     },
     {
         season: 'fall',
-        name: 'Chocolate fair // Salon du chocolat',
-        img: 'img/choc2.jpeg',
+        name: 'Salon du chocolat',
+        img: 'img/chocolat-avec-la-poudre-de-cacao-125953683.jpg',
         date: 'from 5 to 7 November // du 5 au 7 novembre',
         localisation:
             '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.3152384916557!2d4.852309815493187!3d45.78491187910613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eac0a2068105%3A0x601302e66888357d!2sCentre%20de%20Congr%C3%A8s%20de%20Lyon!5e0!3m2!1sfr!2sfr!4v1633632763186!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
