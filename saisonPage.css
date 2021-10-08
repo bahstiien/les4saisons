@@ -68,9 +68,8 @@ h2:hover {
 }
 
 h3 {
-  color: #868c92;
-  text-align: left;
-  margin-left: 10px;
+  color: #25292e;
+  text-align: center;
   font-family: 'Federo', sans-serif;
   font-size: 2em;
   letter-spacing: 10px;
@@ -189,28 +188,34 @@ input:checked[type='checkbox']::before {
 
 .cardBody :not(.card-name) {
   padding: 1rem;
+  text-align: center;
   margin-right: auto;
   margin-left: auto;
   font-family: 'Federo', sans-serif;
   display: flex;
   flex-direction: row;
+  text-align: justify;
 }
 
 .cardDescription {
   margin-bottom: 20px;
+  max-width: 800px;
   color: #2b2c2e;
-  text-align: justify;
   font-family: 'Federo', sans-serif;
   font-size: medium;
   letter-spacing: 1px;
 }
+p.cardDescription {
+  text-align: justify;
+}
 
 .cardDate {
   color: #868c92;
-  text-align: center;
-  margin-left: 30px;
   font-family: 'Federo', sans-serif;
   font-weight: bold;
   font-size: large;
   letter-spacing: 3px;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
 }
