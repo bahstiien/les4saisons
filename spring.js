@@ -24,22 +24,26 @@ function createCardEvent(name, date, localisation, description, img) {
 
   const cardName = document.createElement('h3');
   cardName.classList.add('card-name');
+  cardName.setAttribute("data-translatable", true)
   cardName.innerHTML = name;
   cardBody.appendChild(cardName);
 
   const cardDate = document.createElement('p');
   cardDate.classList.add('cardDate');
+  cardDate.setAttribute("data-translatable", true)
   cardDate.innerHTML = date;
   cardBody.appendChild(cardDate);
 
   const cardMaps = document.createElement('p');
   cardMaps.classList.add('cardMaps');
+  cardMaps.setAttribute("data-translatable", true)
   cardMaps.innerHTML = localisation;
   cardBody.appendChild(cardMaps);
 
   const cardDescription = document.createElement('p');
   cardDescription.classList.add('cardDescription');
   cardDescription.innerHTML = description;
+  cardDescription.setAttribute("data-translatable", true)
   cardBody.appendChild(cardDescription);
 }
 
@@ -51,4 +55,8 @@ for (let i = 0; i < eventInSpring.length; i++) {
     eventInSpring[i].description,
     eventInSpring[i].img
   );
-}
+
+  for (let i = 0; i < eventInSpring.length; i++) {
+    createCardEvent(eventInSpring[i].name, eventInSpring[i].date, eventInSpring[i].localisation, eventInSpring[i].description, eventInSpring[i].img)
+    i18n.changeLanguage("fr");
+  }
