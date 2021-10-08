@@ -86,7 +86,7 @@ const eventDataBase = [
 
   {
     season: 'spring',
-    name: '24h de l INSA',
+    name: "24h de l'INSA",
     img: 'img/insalyon.jpg',
     date: 'Mois de mai',
     localisation:
