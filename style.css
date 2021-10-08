@@ -430,9 +430,9 @@ input:checked[type='checkbox']::before {
     font-family: 'Federo', sans-serif;
     color: #868c92;
     }
-
+    
     #contactForm {
-    display: flex;
+      display: flex;
     flex-direction: column;
     width: 100%;
     }
