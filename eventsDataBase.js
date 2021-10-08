@@ -84,7 +84,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
         season: 'spring',
         name: '24h de l INSA',
         img: 'img/insalyon.jpg',
-        date: 'may // mai',
+        date: 'During may // Tout au long du mois de mai',
         localisation:
             '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.394282235534!2d4.8760097149303485!3d45.783328120114206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c01fae0783ab%3A0xe24e66663726d2eb!2sINSA%20Lyon!5e0!3m2!1sfr!2sfr!4v1633632329806!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
         description: 'The INSA 24 hour festival in Villeurbanne every year in May. 2 evenings of concerts, 2 days of free entertainment, 24 hours of sports races! With friends or family, we are waiting for you on the Doua campus for this event organised 100% by students // Festival des 24 heures de l INSA à Villeurbanne chaque année au mois de mai. 2 soirées de concerts, 2 journées d animations gratuites, 24 heures de courses sportives ! Entre amis ou en famille, nous vous attendons sur le campus de la Doua pour cet évènement organisé 100% par des étudiants'
