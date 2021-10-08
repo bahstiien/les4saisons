@@ -1,14 +1,13 @@
-const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
-  {
-    season: 'winter',
-    name: 'Fête des lumières',
-    img: 'img/image6.jpg',
-    date: 'début décembre',
-    localisation:
-      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.478026615345!2d4.8291940748305215!3d45.7563779020629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea52244ab879%3A0xb0956981fd027394!2sBellecour%20-%20H%C3%B4tel%20Dieu%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633631785879!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
-    description:
-      'Du 8 au 11 décembre, Lyon la ville lumière allume toutes ses lumières, et la ville est emportée dans un merveilleux spectacle au fil de ses rues et ruelles. Le spectacle est grandiose et vaut vraiment le détour. La tradition veut que chaque famille lyonnaise participe à illuminer la ville avec des petits verres garnis d’une bougie, appelés des lumignons.',
-  },
+const eventDataBase = [
+    {
+        season: 'winter',
+        name: 'Fête des lumières',
+        img: "img/image6.jpg",
+        date: 'from 8 to 11 December // du 8 au 11 décembre',
+        localisation:
+            '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.478026615345!2d4.8291940748305215!3d45.7563779020629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea52244ab879%3A0xb0956981fd027394!2sBellecour%20-%20H%C3%B4tel%20Dieu%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633631785879!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+        description: 'Lyon, the city of lights, turns on all its lights, and the city is carried away in a marvellous show along its streets and alleys. The show is grandiose and well worth the diversions. The tradition is that each family in Lyon takes part in illuminating the city with small glasses filled with a candle, called lumignons. // Lyon la ville lumière allume toutes ses lumières, et la ville est emportée dans un merveilleux spectacle au fil de ses rues et ruelles. Le spectacle est grandiose et vaut vraiment le détour. La tradition veut que chaque famille lyonnaise participe à illuminer la ville avec des petits verres garnis d’une bougie, appelés des lumignons.'
+    },
 
   {
     season: 'winter',
@@ -43,17 +42,15 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
       'Pour la première fois en tournée en France, revivez cette extraordinaire histoire d’amitié, de magie et d’aventure lors d’un ciné-concert exceptionnel ! Avec plus de 80 musiciens sur scène, le Yellow Socks Orchestra interprétera en live l’inoubliable musique de John Williams pendant la projection du film (VOSTFR) sur écran géant, en parfaite synchronisation avec les images du premier opus.',
   },
 
-  {
-    season: 'summer',
-    name: 'Biennale de la danse',
-    img: 'img/imagebiennale.png',
-    date: '1er au 16 juin',
-    localisation:
-      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.478026615345!2d4.8291940748305215!3d45.7563779020629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea52244ab879%3A0xb0956981fd027394!2sBellecour%20-%20H%C3%B4tel%20Dieu%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633631785879!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
-
-    description:
-      ' Programmation s’adapte à la situation, mais promet bien des découvertes et des émotions autour de la créativité africaine et de la jeunesse du 21e siècle et le projet immersif de l Expérience Fagor! 52 créateurs européens et africains, 22 créations, pour des retrouvailles avec le public très attendues ! Du 1er au 16 juin 2021.',
-  },
+    {
+        season: 'summer',
+        name: 'Biennale de la danse',
+        img: 'img/image2.jpg',
+        date: 'from 1st to 16 June // du 1er au 16 juin',
+        localisation:
+            '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.478026615345!2d4.8291940748305215!3d45.7563779020629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea52244ab879%3A0xb0956981fd027394!2sBellecour%20-%20H%C3%B4tel%20Dieu%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633631785879!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+        description: 'The programme is adapted to the situation, but promises many discoveries and emotions around African creativity and the youth of the 21st century and the immersive project of the Fagor Experience! 52 European and African creators, 22 creations, for a highly anticipated reunion with the public! From 1 to 16 June 2021. // La programmation s’adapte à la situation, mais promet bien des découvertes et des émotions autour de la créativité africaine et de la jeunesse du 21e siècle et le projet immersif de l Expérience Fagor! 52 créateurs européens et africains, 22 créations, pour des retrouvailles avec le public très attendues ! Du 1er au 16 juin 2021.'
+    },
 
   {
     season: 'summer',
@@ -66,16 +63,15 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
       ' Théâtre, musique, danse, opéra, cirque... Les Nuits de Fourvière sont dévolues aux arts de la scène et s attachent, depuis 1946, à faire coexister les disciplines. Chaque été, en juin et juillet, le festival présente près de 130 représentations pour plus de cent trente mille spectateurs. Si la pluridisciplinarité est un critère, elle n est en rien une règle absolue. Le festival garantit son ouverture et sa modernité en se gardant de normer ou de thématiser. Les Nuits se sont sculptées un projet artistique singulier avec pour seule boussole la qualité artistique des projets et leur inscription sur la scène internationale.',
   },
 
-  {
-    season: 'summer',
-    name: 'Jazz à Vienne',
-    img: 'images/jazzVienne.jpg',
-    date: ' 23 juin au 10 juillet',
-    localisation:
-      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.282319165957!2d4.875809514920006!3d45.524524037438354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2c1e503679cfc9c!2sTh%C3%A9%C3%A2tre%20Antique%20de%20Vienne!5e0!3m2!1sfr!2sfr!4v1633632246422!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
-    description:
-      'Le Festival Jazz à Vienne 2021 vous donne rendez-vous pour une nouvelle édition à Vienne du jeudi 24 juin 2021 au samedi 10 juillet 2021. Au programme du Festival Jazz à Vienne 2021, retrouvez de nombreux artistes et groupes de musique en concert à Vienne.',
-  },
+    {
+        season: 'summer',
+        name: 'Jazz à Vienne',
+        img: 'images/jazzVienne.jpg',
+        date: 'from 23 June to 10 July // du 23 juin au 10 juillet',
+        localisation:
+            '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.282319165957!2d4.875809514920006!3d45.524524037438354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2c1e503679cfc9c!2sTh%C3%A9%C3%A2tre%20Antique%20de%20Vienne!5e0!3m2!1sfr!2sfr!4v1633632246422!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+        description: 'The Jazz à Vienne 2021 Festival will take place in Vienne from Thursday 24th June 2021 to Saturday 10th July 2021. On the programme of the Festival Jazz à Vienne 2021, you will find many artists and music groups in concert in Vienne. // Le Festival Jazz à Vienne 2021 vous donne rendez-vous pour une nouvelle édition à Vienne du jeudi 24 juin 2021 au samedi 10 juillet 2021. Au programme du Festival Jazz à Vienne 2021, retrouvez de nombreux artistes et groupes de musique en concert à Vienne.'
+    },
 
   {
     season: 'summer',
