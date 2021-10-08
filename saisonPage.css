@@ -128,6 +128,9 @@ input:checked[type='checkbox']::before {
 
 .footerTitle {
   font-family: 'Federo', sans-serif;
+  font-size: large;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
   color: #25292e;
   text-align: center;
 }
