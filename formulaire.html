@@ -1,121 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-translatable> Lyon's events throughout the seasons // Les évènements Lyonnais au fil des saisons</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-translatable>
+      Lyon's events throughout the seasons // Les évènements Lyonnais au fil des
+      saisons
+    </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
-       
-</head>
-<body>
-<header>
-    <div class="topHeader">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Federo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topHeader">
         <h1><a href="index.html">Le Lyon des saisons</a></h1>
-       <div id="btnLangage">
-            <input type="checkbox" name=" btn ">
+        <div id="btnLangage">
+          <input type="checkbox" name=" btn " />
         </div>
+      </div>
+    </header>
+    <h2 data-translatable>Contact form // Formulaire de contact</h2>
+    <div id="caroussel">
+      <div class="images">
+        <img src="img/image2.jpg" alt="" />
+        <img src="img/image3.jpg" alt="" />
+        <img src="img/image5.jpg" alt="" />
+        <img src="img/image4.jpg" alt="" />
+        <img src="img/image1.jpg" alt="" />
+      </div>
     </div>
-</header>
-<h2 data-translatable> Contact form // Formulaire de contact</h2>
-<div id="caroussel">
-    <div class="images">
-        <img src="img/image2.jpg" alt="">
-        <img src="img/image3.jpg" alt="">
-        <img src="img/image5.jpg" alt="">
-        <img src="img/image4.jpg" alt="">
-        <img src="img/image1.jpg" alt="">
-    </div>
-    </div> 
     <div class="selectSaison">
-        <select name="season" id="season" type="text">
-            <option value="" data-translatable>Choose a saison // Choisir une saison</option>
-            <option value="spring" type="text" data-translatable>Spring // Printemps</option>
-            <option value="summer" type="text"data-translatable>Summer // Eté</option>
-            <option value="fall" type="text" data-translatable>Fall // Automne</option>
-            <option value="winter" type="text" data-translatable>Winter // Hiver</option>
-        </select>
+      <select name="season" id="season" type="text">
+        <option value="" data-translatable>
+          Choose a saison // Choisir une saison
+        </option>
+        <option value="spring" type="text" data-translatable>
+          Spring // Printemps
+        </option>
+        <option value="summer" type="text" data-translatable>
+          Summer // Eté
+        </option>
+        <option value="fall" type="text" data-translatable>
+          Fall // Automne
+        </option>
+        <option value="winter" type="text" data-translatable>
+          Winter // Hiver
+        </option>
+      </select>
     </div>
-    
+
     <section id="contact">
-    <form id="contactForm">
+      <form id="contactForm">
         <label for="name" data-translatable>firstName : // Nom :</label>
-        <input type="text" required="required" id="name">
+        <input type="text" required="required" id="name" />
 
         <label for="lastName" data-translatable>lastName : // Prénom :</label>
-        <input type="text" required="required" id="lastName">
+        <input type="text" required="required" id="lastName" />
 
-        <label for="email" data-translatable>Your email : // Votre Email :</label>
-        <input type="text" required="required" id="email">
-       
-        <label for="title" data-translatable>Title of your contribution : // Titre de votre contribution :</label>
-        <input type="text" required="required" id="title">
+        <label for="email" data-translatable
+          >Your email : // Votre Email :</label
+        >
+        <input type="text" required="required" id="email" />
 
-        <label for="subtitle" data-translatable>Subtitle of your contribution : // Sous-titre de votre contribution :</label>
-        <input type="text" required="required" id="subtitle"> 
+        <label for="title" data-translatable
+          >Title of your contribution : // Titre de votre contribution :</label
+        >
+        <input type="text" required="required" id="title" />
 
-        <label for="date" data-translatable>Date of the event : // Date de l'évènement:</label>
+        <label for="subtitle" data-translatable
+          >Subtitle of your contribution : // Sous-titre de votre contribution
+          :</label
+        >
+        <input type="text" required="required" id="subtitle" />
 
-        <input type="date" id="date" name="trip-start"
-        value="2021-10-01"
-        min="2021-01-01" max="2030-12-31">
+        <label for="date" data-translatable
+          >Date of the event : // Date de l'évènement:</label
+        >
 
-        <label for="localisation" data-translatable>Location of the event : // Lieu de l'évènement :</label>
-        <input type="text" required="required" id="localisation">
+        <input
+          type="date"
+          id="date"
+          name="trip-start"
+          value="2021-10-01"
+          min="2021-01-01"
+          max="2030-12-31"
+        />
 
-        <label for="insertion" data-translatable>Insertion of the URL : // Insertion de l'URL de votre image :</label>
-        <input type="text" required="required" id="img">
+        <label for="localisation" data-translatable
+          >Location of the event : // Lieu de l'évènement :</label
+        >
+        <input type="text" required="required" id="localisation" />
 
-        <label for="description" class="labelMess" data-translatable>Your message : // Votre message :</label>
-        <textarea  type="text" required="required" id="description"></textarea>
+        <label for="insertion" data-translatable
+          >Insertion of the URL : // Insertion de l'URL de votre image :</label
+        >
+        <input type="text" required="required" id="img" />
 
-        <input type="submit"  class="submit" value="Envoyer">
-    </form>
-    
-</section>
+        <label for="description" class="labelMess" data-translatable
+          >Your message : // Votre message :</label
+        >
+        <textarea type="text" required="required" id="description"></textarea>
 
-<footer>
-    <div class="footerBox">
+        <input type="submit" class="submit" value="Envoyer" />
+      </form>
+    </section>
+
+    <footer>
+      <div class="footerBox">
         <div class="socialBox">
-            <h3 class="footerTitle" data-translatable>Find us in our networks // Retrouvez nous sur nos réseaux</h3>
-            <div class="boxLink">
-                <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" class="imgSocial"/></a>
-                <a class="socialNetwork" href="#"><img src="https://img.icons8.com/glyph-neue/64/000000/instagram-new.png" class="imgSocial"/></a>
-                <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/pinterest--v1.png" class="imgSocial"/></a>
-                <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin--v1.png" class="imgSocial"/></a>
-                <a class="socialNetwork" href="#"><img src="https://img.icons8.com/ios-filled/50/000000/github--v1.png" class="imgSocial"/></a>
-
-            </div>
+          <h3 class="footerTitle" data-translatable>
+            Find us on our networks // Retrouvez nous sur nos réseaux
+          </h3>
+          <div class="boxLink">
+            <a
+              class="socialNetwork"
+              href="https://www.facebook.com/WildCodeSchool/"
+              target="_blank"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"
+                class="imgSocial"
+            /></a>
+            <a
+              class="socialNetwork"
+              href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr"
+              target="_blank"
+              ><img
+                src="https://img.icons8.com/glyph-neue/64/000000/instagram-new.png"
+                class="imgSocial"
+            /></a>
+            <a
+              class="socialNetwork"
+              href="https://www.wildcodeschool.com/fr-FR"
+              target="_blank"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/000000/pinterest--v1.png"
+                class="imgSocial"
+            /></a>
+            <a
+              class="socialNetwork"
+              href="https://fr.linkedin.com/school/wild-code-school/"
+              target="_blank"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/000000/linkedin--v1.png"
+                class="imgSocial"
+            /></a>
+            <a
+              class="socialNetwork"
+              href="https://github.com/WildCodeSchool"
+              target="_blank"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/000000/github--v1.png"
+                class="imgSocial"
+            /></a>
+          </div>
         </div>
 
         <div class="infoBox">
-            <h3 class="footerTitle" data-translatable>Come and visit us // Venez nous rendre visite</h3>
-            <p class="localisation"> Wild Code School</p>
-            <p class="localisation">17 Rue Delandine, 69002 Lyon</p>
+          <h3 class="footerTitle" data-translatable>
+            Come and visit us // Venez nous rendre visite
+          </h3>
+          <p class="localisation">Wild Code School</p>
+          <p class="localisation">17 Rue Delandine, 69002 Lyon</p>
         </div>
-    </div>
-    <p class="footerBottom">
+      </div>
+      <p class="footerBottom">
         Florence - Solène - Arthaud - Bastien - Nicolas
-    </p>
-</footer>
+      </p>
+    </footer>
 
-<script src="domi18n.js"></script>
-<script>
-  const i18n = domI18n({
-    languages: ['en', 'fr']
-  });
-  
-</script>
-<script src="index.js"></script>
+    <script src="domi18n.js"></script>
+    <script>
+      const i18n = domI18n({
+        languages: ['en', 'fr'],
+      });
+    </script>
+    <script src="index.js"></script>
 
-<script src="formulaire.js"></script>
-<script src="eventsDataBase.js"></script>
-
-</body>
+    <script src="formulaire.js"></script>
+    <script src="eventsDataBase.js"></script>
+  </body>
 </html>
