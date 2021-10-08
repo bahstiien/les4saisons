@@ -67,3 +67,4 @@ for (let i = 0; i < eventInWinter.length; i++) {
 for (let i = 0; i < eventInWinter.length; i++) {
     createCardEvent(eventInWinter[i].name, eventInWinter[i].date, eventInWinter[i].localisation, eventInWinter[i].description, eventInWinter[i].img)
     i18n.changeLanguage("fr");
+}

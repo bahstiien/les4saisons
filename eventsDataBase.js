@@ -1,7 +1,7 @@
 const eventDataBase = [
     {
         season: 'winter',
-        name: 'Festival of Lights // Fête des lumières',
+        name: 'Fête des lumières',
         img: "img/image6.jpg",
         date: 'from 8 to 11 December // du 8 au 11 décembre',
         localisation:
@@ -12,7 +12,7 @@ const eventDataBase = [
 
     {
         season: 'winter',
-        name: 'Christmas Market // Marché de Noël',
+        name: 'Marché de Noël',
         img: "img/Marchénoel2.jpeg",
         date: 'from 10 to 26 December // du 10 au 26 décembre',
         localisation:
@@ -22,7 +22,7 @@ const eventDataBase = [
 
     {
         season: 'winter',
-        name: 'Book festival // Fête du livre',
+        name: 'Fête du livre',
         img: "img/livre.jpeg",
         date: 'from 5 to 12 January // du 5 au 12 janvier',
         localisation:
@@ -32,7 +32,7 @@ const eventDataBase = [
 
     {
         season: 'winter',
-        name: 'Harry Potter show // Spectacle Harry Potter',
+        name: 'Spectacle Harry Potter',
         img: "img/hpotter.jpeg",
         date: 'from 2 to 7 February // du 2 au 7 février',
         localisation:
@@ -42,7 +42,7 @@ const eventDataBase = [
 
     {
         season: 'summer',
-        name: 'Dance Biennial // Biennale de la danse',
+        name: 'Biennale de la danse',
         img: 'img/image2.jpg',
         date: 'from 1st to 16 June // du 1er au 16 juin',
         localisation:
@@ -52,7 +52,7 @@ const eventDataBase = [
 
     {
         season: 'summer',
-        name: 'Fourvière Nights // Nuits de fourvière',
+        name: 'Nuits de fourvière',
         img: 'images/fourvières.jpg',
         date: 'from 1st June to 30 July // du 1er juin au 30 juillet',
         localisation:
@@ -62,7 +62,7 @@ const eventDataBase = [
 
     {
         season: 'summer',
-        name: 'Jazz in Vienne // Jazz à Vienne',
+        name: 'Jazz à Vienne',
         img: 'images/jazzVienne.jpg',
         date: 'from 23 June to 10 July // du 23 juin au 10 juillet',
         localisation:
@@ -72,7 +72,7 @@ const eventDataBase = [
 
     {
         season: 'summer',
-        name: 'Music festival // Fête de la musique',
+        name: 'Fête de la musique',
         img: 'img/fdlamusic.jpeg',
         date: ' 21 June // du 21 juin',
         localisation:
@@ -82,7 +82,7 @@ const eventDataBase = [
 
     {
         season: 'spring',
-        name: '24h of INSA // 24h de l INSA',
+        name: '24h de l INSA',
         img: 'img/24hinsa.jpeg',
         date: 'may // mai',
         localisation:
@@ -92,7 +92,7 @@ const eventDataBase = [
 
     {
         season: 'spring',
-        name: 'Beautiful spring // Magnifique printemps',
+        name: 'Magnifique printemps',
         img: 'ptps2.jpeg',
         date: 'from 13 to 28 March // du 13 au 28 mars',
         localisation:
@@ -102,7 +102,7 @@ const eventDataBase = [
 
     {
         season: 'spring',
-        name: 'Villa Gillet // Villa Gillet',
+        name: 'Villa Gillet',
         img: '/img/villa gillet.jpeg',
         date: 'from 25 to 30 May // du 25 au 30 mai',
         localisation:
@@ -112,7 +112,7 @@ const eventDataBase = [
 
     {
         season: 'fall',
-        name: 'Chestnut Vogue // Vogue des Marrons',
+        name: 'Vogue des Marrons',
         img: 'img/image3.jpg',
         date: 'from 2 October to 14 November // du 2 octobre au 14 novembre',
         localisation:
@@ -122,7 +122,7 @@ const eventDataBase = [
 
     {
         season: 'fall',
-        name: 'Independent Winegrowers Exhibition // Salon des Vignerons indépendants',
+        name: 'Salon des Vignerons indépendants',
         img: 'img/salonvin.jpeg',
         date: 'from 19 to 22 November // du 19 au 22 novembre',
         localisation:
@@ -131,7 +131,7 @@ const eventDataBase = [
     },
     {
         season: 'fall',
-        name: 'Chocolate fair // Salon du chocolat',
+        name: 'Salon du chocolat',
         img: 'img/choc2.jpeg',
         date: 'from 5 to 7 November // du 5 au 7 novembre',
         localisation:

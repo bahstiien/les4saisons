@@ -60,3 +60,4 @@ for (let i = 0; i < eventInSpring.length; i++) {
     createCardEvent(eventInSpring[i].name, eventInSpring[i].date, eventInSpring[i].localisation, eventInSpring[i].description, eventInSpring[i].img)
     i18n.changeLanguage("fr");
   }
+}
