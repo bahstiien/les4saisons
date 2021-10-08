@@ -58,7 +58,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
   {
     season: 'summer',
     name: 'Nuits de fourvière',
-    img: 'images/fourvières.jpg',
+    img: 'img/nuitdf.jpg',
     date: '1er juin au 30 juillet',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.569838692446!2d4.818379591547391!3d45.75976906747603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ebaee66e16b7%3A0x74cc83cde490e075!2sLes%20Nuits%20de%20Fourvi%C3%A8re!5e0!3m2!1sfr!2sfr!4v1633632157796!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -125,7 +125,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
     season: 'fall',
     name: 'Vogue des Marrons',
     img: 'img/image3.jpg',
-    date: '2 octobre au 14 novembre',
+    date: 'Du 2 octobre au 14 novembre',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2735.056027365508!2d4.826760518231703!3d45.773917377984596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb035a00781f%3A0xc239549b51301fe0!2sBd%20de%20la%20Croix-Rousse%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633632718846!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
     description:
@@ -135,7 +135,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
   {
     season: 'fall',
     name: 'Salon des Vignerons indépendants',
-    img: 'img/salonvin.jpeg',
+    img: 'img/sdv.jpeg',
     date: 'Du 19 au 22 novembre',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.016793579966!2d4.82324341492824!3d45.73075802363921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea2b4073f885%3A0xc820a00fb26b3185!2sHalle%20Tony%20Garnier!5e0!3m2!1sfr!2sfr!4v1633631936655!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
