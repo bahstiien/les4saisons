@@ -182,7 +182,7 @@ input:checked[type='checkbox']::before {
   background-size: cover;
   background-position: center top 30%;
   background-image: url();
-  height: 200px;
+  height: 300px;
   width: 100%;
 }
 

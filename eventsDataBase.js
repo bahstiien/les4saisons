@@ -1,19 +1,18 @@
-const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
-  {
-    season: 'winter',
-    name: 'Fête des lumières',
-    img: 'img/image6.jpg',
-    date: 'début décembre',
-    localisation:
-      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.478026615345!2d4.8291940748305215!3d45.7563779020629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea52244ab879%3A0xb0956981fd027394!2sBellecour%20-%20H%C3%B4tel%20Dieu%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633631785879!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
-    description:
-      'Du 8 au 11 décembre, Lyon la ville lumière allume toutes ses lumières, et la ville est emportée dans un merveilleux spectacle au fil de ses rues et ruelles. Le spectacle est grandiose et vaut vraiment le détour. La tradition veut que chaque famille lyonnaise participe à illuminer la ville avec des petits verres garnis d’une bougie, appelés des lumignons.',
-  },
+const eventDataBase = [
+    {
+        season: 'winter',
+        name: 'Fête des lumières',
+        img: "img/image6.jpg",
+        date: 'from 8 to 11 December // du 8 au 11 décembre',
+        localisation:
+            '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.478026615345!2d4.8291940748305215!3d45.7563779020629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea52244ab879%3A0xb0956981fd027394!2sBellecour%20-%20H%C3%B4tel%20Dieu%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633631785879!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+        description: 'Lyon, the city of lights, turns on all its lights, and the city is carried away in a marvellous show along its streets and alleys. The show is grandiose and well worth the diversions. The tradition is that each family in Lyon takes part in illuminating the city with small glasses filled with a candle, called lumignons. // Lyon la ville lumière allume toutes ses lumières, et la ville est emportée dans un merveilleux spectacle au fil de ses rues et ruelles. Le spectacle est grandiose et vaut vraiment le détour. La tradition veut que chaque famille lyonnaise participe à illuminer la ville avec des petits verres garnis d’une bougie, appelés des lumignons.'
+    },
 
   {
     season: 'winter',
     name: 'Marché de Noël',
-    img: 'img/Marchénoel2.jpeg',
+    img: 'img/marchenoel.jpg',
     date: 'Du 10 au 26 décembre',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.031311383808!2d4.826495214929049!3d45.75051822231473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4cb1320b1d%3A0x7876d5c8897af4f5!2sPl.%20Carnot%2C%2069002%20Lyon!5e0!3m2!1sfr!2sfr!4v1633631865236!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -24,7 +23,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
   {
     season: 'winter',
     name: 'Fête du livre',
-    img: 'img/livre.jpeg',
+    img: 'img/fdlivre.jpg',
     date: 'Du 5 au 12 janvier',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.016793579966!2d4.82324341492824!3d45.73075802363921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea2b4073f885%3A0xc820a00fb26b3185!2sHalle%20Tony%20Garnier!5e0!3m2!1sfr!2sfr!4v1633631936655!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -35,7 +34,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
   {
     season: 'winter',
     name: 'Spectacle Harry Potter',
-    img: 'img/hpotter.jpeg',
+    img: 'img/harryp.jpg.webp',
     date: 'Du 2 au 7 février',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.016793579966!2d4.82324341492824!3d45.73075802363921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea2b4073f885%3A0xc820a00fb26b3185!2sHalle%20Tony%20Garnier!5e0!3m2!1sfr!2sfr!4v1633631936655!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -43,22 +42,20 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
       'Pour la première fois en tournée en France, revivez cette extraordinaire histoire d’amitié, de magie et d’aventure lors d’un ciné-concert exceptionnel ! Avec plus de 80 musiciens sur scène, le Yellow Socks Orchestra interprétera en live l’inoubliable musique de John Williams pendant la projection du film (VOSTFR) sur écran géant, en parfaite synchronisation avec les images du premier opus.',
   },
 
-  {
-    season: 'summer',
-    name: 'Biennale de la danse',
-    img: 'img/image2.jpg',
-    date: '1er au 16 juin',
-    localisation:
-      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.478026615345!2d4.8291940748305215!3d45.7563779020629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea52244ab879%3A0xb0956981fd027394!2sBellecour%20-%20H%C3%B4tel%20Dieu%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633631785879!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
-
-    description:
-      ' Programmation s’adapte à la situation, mais promet bien des découvertes et des émotions autour de la créativité africaine et de la jeunesse du 21e siècle et le projet immersif de l Expérience Fagor! 52 créateurs européens et africains, 22 créations, pour des retrouvailles avec le public très attendues ! Du 1er au 16 juin 2021.',
-  },
+    {
+        season: 'summer',
+        name: 'Biennale de la danse',
+        img: 'img/image2.jpg',
+        date: 'from 1st to 16 June // du 1er au 16 juin',
+        localisation:
+            '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.478026615345!2d4.8291940748305215!3d45.7563779020629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea52244ab879%3A0xb0956981fd027394!2sBellecour%20-%20H%C3%B4tel%20Dieu%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633631785879!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+        description: 'The programme is adapted to the situation, but promises many discoveries and emotions around African creativity and the youth of the 21st century and the immersive project of the Fagor Experience! 52 European and African creators, 22 creations, for a highly anticipated reunion with the public! From 1 to 16 June 2021. // La programmation s’adapte à la situation, mais promet bien des découvertes et des émotions autour de la créativité africaine et de la jeunesse du 21e siècle et le projet immersif de l Expérience Fagor! 52 créateurs européens et africains, 22 créations, pour des retrouvailles avec le public très attendues ! Du 1er au 16 juin 2021.'
+    },
 
   {
     season: 'summer',
     name: 'Nuits de fourvière',
-    img: 'images/fourvières.jpg',
+    img: 'img/nuitdf.jpg',
     date: '1er juin au 30 juillet',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.569838692446!2d4.818379591547391!3d45.75976906747603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ebaee66e16b7%3A0x74cc83cde490e075!2sLes%20Nuits%20de%20Fourvi%C3%A8re!5e0!3m2!1sfr!2sfr!4v1633632157796!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -66,21 +63,20 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
       ' Théâtre, musique, danse, opéra, cirque... Les Nuits de Fourvière sont dévolues aux arts de la scène et s attachent, depuis 1946, à faire coexister les disciplines. Chaque été, en juin et juillet, le festival présente près de 130 représentations pour plus de cent trente mille spectateurs. Si la pluridisciplinarité est un critère, elle n est en rien une règle absolue. Le festival garantit son ouverture et sa modernité en se gardant de normer ou de thématiser. Les Nuits se sont sculptées un projet artistique singulier avec pour seule boussole la qualité artistique des projets et leur inscription sur la scène internationale.',
   },
 
-  {
-    season: 'summer',
-    name: 'Jazz à Vienne',
-    img: 'images/jazzVienne.jpg',
-    date: ' 23 juin au 10 juillet',
-    localisation:
-      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.282319165957!2d4.875809514920006!3d45.524524037438354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2c1e503679cfc9c!2sTh%C3%A9%C3%A2tre%20Antique%20de%20Vienne!5e0!3m2!1sfr!2sfr!4v1633632246422!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
-    description:
-      'Le Festival Jazz à Vienne 2021 vous donne rendez-vous pour une nouvelle édition à Vienne du jeudi 24 juin 2021 au samedi 10 juillet 2021. Au programme du Festival Jazz à Vienne 2021, retrouvez de nombreux artistes et groupes de musique en concert à Vienne.',
-  },
+    {
+        season: 'summer',
+        name: 'Jazz à Vienne',
+        img: 'images/jazzVienne.jpg',
+        date: 'from 23 June to 10 July // du 23 juin au 10 juillet',
+        localisation:
+            '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.282319165957!2d4.875809514920006!3d45.524524037438354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2c1e503679cfc9c!2sTh%C3%A9%C3%A2tre%20Antique%20de%20Vienne!5e0!3m2!1sfr!2sfr!4v1633632246422!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+        description: 'The Jazz à Vienne 2021 Festival will take place in Vienne from Thursday 24th June 2021 to Saturday 10th July 2021. On the programme of the Festival Jazz à Vienne 2021, you will find many artists and music groups in concert in Vienne. // Le Festival Jazz à Vienne 2021 vous donne rendez-vous pour une nouvelle édition à Vienne du jeudi 24 juin 2021 au samedi 10 juillet 2021. Au programme du Festival Jazz à Vienne 2021, retrouvez de nombreux artistes et groupes de musique en concert à Vienne.'
+    },
 
   {
     season: 'summer',
     name: 'Fête de la musique',
-    img: 'img/fdm.jpeg',
+    img: 'img/fdm2.png',
     date: '21 juin',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.478026615345!2d4.8291940748305215!3d45.7563779020629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea52244ab879%3A0xb0956981fd027394!2sBellecour%20-%20H%C3%B4tel%20Dieu%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633631785879!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -91,7 +87,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
   {
     season: 'spring',
     name: '24h de l INSA',
-    img: 'img/24hinsa.jpeg',
+    img: 'img/insalyon.jpg',
     date: 'Mois de mai',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.394282235534!2d4.8760097149303485!3d45.783328120114206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c01fae0783ab%3A0xe24e66663726d2eb!2sINSA%20Lyon!5e0!3m2!1sfr!2sfr!4v1633632329806!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -102,7 +98,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
   {
     season: 'spring',
     name: 'Magnifique printemps',
-    img: 'ptps2.jpeg',
+    img: 'img/magnifique.jpg',
     date: 'Du 13 au 28 mars',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.6092387569292!2d4.8822863155012755!3d45.69881337910443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c24238f13c51%3A0x2d67da23a57177bd!2sEspace%20Pandora!5e0!3m2!1sfr!2sfr!4v1633632485274!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -113,7 +109,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
   {
     season: 'spring',
     name: 'Villa Gillet : Littérrature live festival',
-    img: 'img/villagillet1.jpeg',
+    img: 'img/litterature2.png',
     date: 'Du 25 au 30 mai',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.7985035316415!2d4.814460615503942!3d45.77522827910581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb11a186fe69%3A0x8e968f549f9a62e0!2sVilla%20Gillet!5e0!3m2!1sfr!2sfr!4v1633632648872!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -124,7 +120,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
   {
     season: 'fall',
     name: 'Vogue des Marrons',
-    img: 'img/image3.jpg',
+    img: 'img/vdm.jpg',
     date: '2 octobre au 14 novembre',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2735.056027365508!2d4.826760518231703!3d45.773917377984596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb035a00781f%3A0xc239549b51301fe0!2sBd%20de%20la%20Croix-Rousse%2C%20Lyon!5e0!3m2!1sfr!2sfr!4v1633632718846!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -135,7 +131,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
   {
     season: 'fall',
     name: 'Salon des Vignerons indépendants',
-    img: 'img/salonvin.jpeg',
+    img: 'img/blanc-rouge-vin.jpg',
     date: 'Du 19 au 22 novembre',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.016793579966!2d4.82324341492824!3d45.73075802363921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea2b4073f885%3A0xc820a00fb26b3185!2sHalle%20Tony%20Garnier!5e0!3m2!1sfr!2sfr!4v1633631936655!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
@@ -145,7 +141,7 @@ const eventDataBase = JSON.parse(localStorage.getItem('events')) || [
   {
     season: 'fall',
     name: 'Salon du chocolat',
-    img: 'img/choc2.jpeg',
+    img: 'img/chocolat-avec-la-poudre-de-cacao-125953683.jpg',
     date: 'Du 5 au 7 novembre',
     localisation:
       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.3152384916557!2d4.852309815493187!3d45.78491187910613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eac0a2068105%3A0x601302e66888357d!2sCentre%20de%20Congr%C3%A8s%20de%20Lyon!5e0!3m2!1sfr!2sfr!4v1633632763186!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',

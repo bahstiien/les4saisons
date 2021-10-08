@@ -28,8 +28,7 @@ const summerIMG = document.querySelector('.summerIMG');
 const fallIMG = document.querySelector('.fallIMG');
 const winterIMG = document.querySelector('.winterIMG');
 const listEvent = document.querySelector('.listEvent');
-const saut = document.querySelector('.saut');
-const showListSpring = document.querySelectorAll('liSpring');
+
 
 let listSpringName = [];
 let listSummerName = [];
@@ -37,12 +36,13 @@ let listFallName = [];
 let listWinterName = [];
 
 listEventInSpring.forEach((event) => {
-    listSpringName.push(event.name)});
-    
+  listSpringName.push(event.name)
+});
+
 springIMG.addEventListener('mouseover', () => {
-    let none=document.querySelector('.unnone');
-    none.innerHTML= (listEventInSpring[0]).name +' ~ '+ (listEventInSpring[1]).name +' ~ '+ (listEventInSpring[2]).name;
-    none.classList.remove("none");
+  let none = document.querySelector('.unnone');
+  none.innerHTML = (listEventInSpring[0]).name + ' ~ ' + (listEventInSpring[1]).name + ' ~ ' + (listEventInSpring[2]).name;
+  none.classList.remove("none");
 });
 
 springIMG.addEventListener('mouseout', () => {
@@ -51,47 +51,50 @@ springIMG.addEventListener('mouseout', () => {
 });
 
 listEventInSummer.forEach((event) => {
-    listSummerName.push(event.name) + ' '});
-    
+  listSummerName.push(event.name) + ' '
+});
+
 summerIMG.addEventListener('mouseover', () => {
-    let none=document.querySelector('.unnone');
-    none.innerHTML= (listEventInSummer[0]).name +' ~ '+ (listEventInSummer[1]).name +' ~ '+ (listEventInSummer[2]).name+' ~ '+(listEventInSummer[3]).name;
-    none.classList.remove("none");
+  let none = document.querySelector('.unnone');
+  none.innerHTML = (listEventInSummer[0]).name + ' ~ ' + (listEventInSummer[1]).name + ' ~ ' + (listEventInSummer[2]).name + ' ~ ' + (listEventInSummer[3]).name;
+  none.classList.remove("none");
 });
 
 summerIMG.addEventListener('mouseout', () => {
-    let none=document.querySelector('.unnone');
-    none.classList.toggle("none");
+  let none = document.querySelector('.unnone');
+  none.classList.toggle("none");
 });
 
 listEventInFall.forEach((event) => {
-    listFallName.push(event.name) + ' '});
-    
-fallIMG.addEventListener('mouseover', () => {
-    let none=document.querySelector('.unnone');
-    none.innerHTML = (listEventInFall[0]).name +' ~ '+ (listEventInFall[1]).name +' ~ '+ (listEventInFall[2]).name;
+  listFallName.push(event.name) + ' '
+});
 
-    none.classList.remove("none");
+fallIMG.addEventListener('mouseover', () => {
+  let none = document.querySelector('.unnone');
+  none.innerHTML = (listEventInFall[0]).name + ' ~ ' + (listEventInFall[1]).name + ' ~ ' + (listEventInFall[2]).name;
+
+  none.classList.remove("none");
 });
 
 fallIMG.addEventListener('mouseout', () => {
-    let none=document.querySelector('.unnone');
-    none.classList.toggle("none");
+  let none = document.querySelector('.unnone');
+  none.classList.toggle("none");
 });
 
 listEventInWinter.forEach((event) => {
-    listWinterName.push(event.name) + ' '});
-    
+  listWinterName.push(event.name) + ' '
+});
+
 winterIMG.addEventListener('mouseover', () => {
-    let none=document.querySelector('.unnone');
-    none.innerHTML= (listEventInWinter[0]).name +' ~ '+ (listEventInWinter[1]).name +' ~ '+ (listEventInWinter[2]).name+' ~ '+(listEventInWinter[3]).name;
-    ;
-    none.classList.remove("none");
+  let none = document.querySelector('.unnone');
+  none.innerHTML = (listEventInWinter[0]).name + ' ~ ' + (listEventInWinter[1]).name + ' ~ ' + (listEventInWinter[2]).name + ' ~ ' + (listEventInWinter[3]).name;
+  ;
+  none.classList.remove("none");
 });
 
 winterIMG.addEventListener('mouseout', () => {
-    let none=document.querySelector('.unnone');
-    none.classList.toggle("none");
+  let none = document.querySelector('.unnone');
+  none.classList.toggle("none");
 });
 // function activeTextSpring () {
 
